@@ -6867,14 +6867,11 @@ header.main-header .header-sticky.active{
 	align-items: end;
 	gap: 30px;
 	margin-right: 25px;
-	filter: brightness(0) invert(1);
 
 	    
 }
 
-.whiteimg{
-	filter: unset !important;
-}
+
 
 .about-us-image-box-1-metal{
 	width: calc(43% - 15px);
@@ -11309,4 +11306,40 @@ header.main-header .header-sticky.active{
 .black-btn:hover {
     background-color: #333;
     transform: translateY(-3px);
+}
+
+.whitebtn{
+	background-color: white;
+	color: black;
+	position: relative;
+	display: inline-block;
+	font-family: var(--default-font);
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1em;
+	text-transform: capitalize;
+	background-size: 200% auto;
+	border-radius: 100px;
+	padding: 17px 45px 17px 24px;
+	border: none;
+	overflow: hidden;
+	transition: all 0.4s ease-in-out;
+	z-index: 1;
+	
+}
+
+.whitebtn::before{
+	content: '';
+	position: absolute;
+    top: 50%;
+    right: 24px;
+    width: 12px;
+    height: 12px;
+    background-image: url('../images/arrow-white.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transform: translateY(-50%);
+	transition: all 0.4s ease-in-out;
+	filter: invert(1);
 }
