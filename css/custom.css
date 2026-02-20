@@ -1,6 +1,6 @@
 /* ----------------------------------------------------------------------------------------
-* Author        : Awaiken
-* Template Name : Luxine - Architecture & Interior Design HTML Template
+* Author        : Itdax Studio
+* Template Name : Saif & Brothers - Perfect Storage Solution
 * File          : CSS File
 * Version       : 1.0
 * ---------------------------------------------------------------------------------------- */
@@ -309,9 +309,9 @@ a:focus{
 
 .loading-container,
 .loading{
-	height: 100px;
+	height: 300px;
 	position: relative;
-	width: 100px;
+	width: 300px;
 	border-radius: 100%;
 }
 
@@ -335,7 +335,7 @@ a:focus{
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	max-width: 66px;
+	max-width: 200px;
 	transform: translate(-50%, -50%);
 }
 
@@ -7864,7 +7864,7 @@ header.main-header .header-sticky.active{
 
 .footer-logo-metal img{
 	width: 100%;
-	max-width: 160px;
+	max-width: 250px;
 }
 
 .about-footer-content-metal{
