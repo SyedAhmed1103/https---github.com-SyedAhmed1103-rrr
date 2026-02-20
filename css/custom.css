@@ -54,8 +54,8 @@
 	--bg-color					: #F4F0E9;
 	--text-color				: #62605D;
 
-	--accent-color				: #615328;
-	--accent-secondary-color	: #BDAD7B;
+	--accent-color				: #000;
+	--accent-secondary-color	: #000;
 	
 	--white-color				: #FFFFFF;
 	--divider-color				: #00000014;
@@ -94,13 +94,11 @@ body{
 }
 
 ::-webkit-scrollbar-thumb{
-	background: linear-gradient(180deg, var(--accent-secondary-color) 0%, var(--accent-color) 100%);
+	background: linear-gradient(180deg, #fff 0%, #fff 100%);
 }
 
 ::selection{
-	color: var(--primary-color);
-	background-color: var(--accent-secondary-color);
-	filter: invert(1);
+
 }
 
 p{
@@ -459,7 +457,7 @@ a:focus{
 /************************************/
 
 .topbar{
-	background: linear-gradient(90deg, var(--accent-secondary-color) 0%, var(--accent-color) 100%);
+	background: linear-gradient(90deg, #fff 0%, #fff 100%);
 	padding: 15px 0;
 }
 
@@ -478,7 +476,7 @@ a:focus{
 	align-items: center;
 	font-size: 14px;
 	font-weight: 500;
-	color: var(--white-color);
+	color: #000;
 	line-height: 1.4em;
 }
 
@@ -486,6 +484,7 @@ a:focus{
 	max-width: 18px;
 	margin-right: 10px;
 	transition: all 0.3s ease-in-out;
+	filter: brightness(0);
 }
 
 .topbar-contact-info ul li:hover img{
@@ -531,13 +530,13 @@ a:focus{
 .topbar-social-links ul li a{
 	display: flex;
 	align-items: center;
-    color: var(--white-color);
+    color: #000;
     transition: all 0.3s ease-in-out;
 }
 
 .topbar-social-links ul li a i{
     font-size: 18px;
-    color: var(--white-color);
+    color: #000;
 	margin-right: 5px;
 	transition: all 0.3s ease-in-out;
 }
@@ -7918,7 +7917,7 @@ header.main-header .header-sticky.active{
 }
 
 .footer-links-metal ul li a:hover{
-	color: var(--accent-secondary-color);
+	color: #fff;
 }
 
 .footer-newsletter-form-metal{
@@ -11071,7 +11070,7 @@ header.main-header .header-sticky.active{
 .contact-icon {
     width: 50px;
     height: 50px;
-    background: #b89b5e;
+    background: #fff;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -11080,7 +11079,7 @@ header.main-header .header-sticky.active{
 }
 
 .contact-icon i {
-    color: #fff;
+    color: #000;
     font-size: 18px;
 }
 
@@ -11100,5 +11099,103 @@ header.main-header .header-sticky.active{
 }
 
 .contact-text a:hover {
-    color: #b89b5e;
+    color: #fff;
+}
+
+/* Hero Slider Arrows */
+.heroSlider .swiper-button-next,
+.heroSlider .swiper-button-prev {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 50%;
+  backdrop-filter: blur(5px);
+  cursor: pointer;
+}
+
+.heroSlider .swiper-button-next:after,
+.heroSlider .swiper-button-prev:after {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.heroSlider .swiper-button-next:hover,
+.heroSlider .swiper-button-prev:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Default Desktop Height */
+.heroSlider,
+.heroSlider .swiper-slide,
+.heroSlider .hero-metal {
+  height: 90vh;
+  min-height: 90vh;
+}
+
+/* Vertical Center Content */
+.heroSlider .hero-metal {
+  display: flex;
+  align-items: center;
+}
+
+/* Mobile Height 50vh */
+@media (max-width: 1024px) {
+  .heroSlider,
+  .heroSlider .swiper-slide,
+  .heroSlider .hero-metal {
+    height: 70vh !important;
+    min-height: 70vh !important;
+  }
+}
+
+/* Mobile 70vh Hero Slider */
+@media (max-width: 1024px) {
+  .heroSlider,
+  .heroSlider .swiper-slide,
+  .heroSlider .hero-metal {
+    height: 70vh !important;
+    min-height: 70vh !important;
+  }
+
+  .heroSlider .hero-metal {
+    display: flex;
+    align-items: center;
+  }
+
+  .heroSlider .hero-image-metal img {
+    max-height: 35vh;
+    object-fit: contain;
+  }
+    .hero-content-metal {
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .hero-content-metal h1 {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .hero-content-metal h3 {
+    font-size: 14px;
+  }
+
+  .hero-content-metal p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* Arrows thoda neeche */
+  .heroSlider .swiper-button-next,
+  .heroSlider .swiper-button-prev {
+    width: 35px;
+    height: 35px;
+  }
+
+  .heroSlider .swiper-button-next:after,
+  .heroSlider .swiper-button-prev:after {
+    font-size: 14px;
+  }
 }

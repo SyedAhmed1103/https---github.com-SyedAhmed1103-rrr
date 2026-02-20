@@ -37,7 +37,8 @@
     <link href="css/custom.css" rel="stylesheet" media="screen">
     <!-- Font Awesome 7 Free CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 
 <body>
@@ -2666,9 +2667,7 @@
 <style>
     
 .base-template__wrapper {
-	min-height: calc(100dvh - 300px);
 	justify-content: flex-start;
-	padding-bottom: 1000px;
     position: absolute;
     top: 50px;
     z-index: 9;
@@ -3106,9 +3105,7 @@ a {
 }
 
 @media screen and (max-width: 1400px) {
-	.base-template__wrapper {
-		min-height: 105vh;
-	}
+
 
 	.header {
 		min-height: 64px;
@@ -3321,90 +3318,89 @@ a {
 	<!-- Header End -->
 
     <!-- Hero Section Start -->
-    <div class="hero-metal dark-section parallaxie">
+<!-- Hero Section Start -->
+<div class="swiper heroSlider">
+  <div class="swiper-wrapper">
+
+    <!-- Slide 1 -->
+    <div class="swiper-slide">
+      <div class="hero-metal dark-section parallaxie">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-7">
-                    <!-- Hero Content Start -->
-                    <div class="hero-content-metal">
-                        <!-- Section Title Start -->
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp">Design. Build. Inspire.</h3>
-                            <h1 class="text-anime-style-3" data-cursor="-opaque">Modern Spaces Crafted With Precision
-                            </h1>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">Every space we design begins with your vision.
-                                Our team carefully blends aesthetics, functionality, and personalized details to create
-                                environments that truly mirror your taste and lifestyle.</p>
-                        </div>
-                        <!-- Section Title End -->
+          <div class="row align-items-center">
 
-                        <!-- Hero Content Body Start -->
-                        <div class="hero-content-body-metal wow fadeInUp" data-wow-delay="0.4s">
-                            <!-- Hero Body Item Start -->
-                            <div class="hero-body-item-metal">
-                                <div class="icon-box">
-                                    <img src="images/icon-hero-body-item-1-metal.svg" alt="">
-                                </div>
-                                <div class="hero-body-item-content-metal">
-                                    <h3>Innovative & Sustainable Design Solutions</h3>
-                                </div>
-                            </div>
-                            <!-- Hero Body Item End -->
-
-                            <!-- Hero Body Item Start -->
-                            <div class="hero-body-item-metal">
-                                <div class="icon-box">
-                                    <img src="images/icon-hero-body-item-2-metal.svg" alt="">
-                                </div>
-                                <div class="hero-body-item-content-metal">
-                                    <h3>End-to-End Architecture & Interior Services</h3>
-                                </div>
-                            </div>
-                            <!-- Hero Body Item End -->
-                        </div>
-                        <!-- Hero Content Body End -->
-
-                        <!-- Hero Content Footer Start -->
-                        <div class="hero-content-footer-metal wow fadeInUp" data-wow-delay="0.6s">
-                            <!-- Hero Button Start -->
-                            <div class="hero-btn">
-                                <a href="projects.html" class="btn-default">Start Your Project</a>
-                            </div>
-                            <!-- Hero Button End -->
-
-                            <!-- Video Play Button Start -->
-                            <div class="video-play-button-metal">
-                                <a href="https://www.youtube.com/watch?v=Y-x0efG1seA" class="popup-video"
-                                    data-cursor-text="Play">
-                                    <i class="fa-solid fa-play"></i>
-                                </a>
-                                <p>Watch Video</p>
-                            </div>
-                            <!-- Video Play Button End -->
-                        </div>
-                        <!-- Hero Content Footer End -->
-                    </div>
-                    <!-- Hero Content End -->
+            <div class="col-xl-7">
+              <div class="hero-content-metal">
+                <div class="section-title">
+                  <h3>Design. Build. Inspire.</h3>
+                  <h1>Modern Spaces Crafted With Precision</h1>
+                  <p>Every space we design begins with your vision. Our team carefully blends aesthetics, functionality, and personalized details to create environments that truly mirror your taste and lifestyle.</p>
                 </div>
-
-                <div class="col-xl-5">
-                    <!-- Hero Image Start -->
-                    <div class="hero-image-metal">
-                        <figure>
-                            <img src="images/hero-image-metal.png" alt="">
-                        </figure>
-
-                        <div class="get-in-touch-circle-metal">
-                            <a href="contact.html">
-                                <img src="images/get-in-touch-circle-metal.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Hero Image End -->
-                </div>
+              </div>
             </div>
+
+       
+
+          </div>
         </div>
+      </div>
     </div>
+
+    <!-- Slide 2 -->
+    <div class="swiper-slide">
+      <div class="hero-metal dark-section parallaxie">
+        <div class="container">
+          <div class="row align-items-center">
+
+            <div class="col-xl-7">
+              <div class="hero-content-metal">
+                <div class="section-title">
+                  <h3>Luxury Interior Solutions</h3>
+                  <h1>Transforming Ideas Into Reality</h1>
+                  <p>We create modern interiors that combine elegance and practicality, delivering timeless design solutions for homes and commercial spaces.</p>
+                </div>
+              </div>
+            </div>
+
+     
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="swiper-slide">
+      <div class="hero-metal dark-section parallaxie">
+        <div class="container">
+          <div class="row align-items-center">
+
+            <div class="col-xl-7">
+              <div class="hero-content-metal">
+                <div class="section-title">
+                  <h3>Creative Architecture</h3>
+                  <h1>Design That Defines Lifestyle</h1>
+                  <p>Our architectural expertise ensures innovative and sustainable designs tailored to your needs and future growth.</p>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Pagination -->
+  <div class="swiper-pagination"></div>
+  <!-- Navigation Buttons -->
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+</div>
+<!-- Hero Section End -->
+
     <!-- Hero Section End -->
 
     <!-- About Us Section Start -->
@@ -4797,6 +4793,30 @@ a {
     <script src="js/wow.min.js"></script>
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".heroSlider", {
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
 </body>
 
 </html>
