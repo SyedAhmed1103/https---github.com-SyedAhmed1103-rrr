@@ -11283,3 +11283,20 @@ header.main-header .header-sticky.active{
 .gallery-buttons button:hover {
 	opacity: 0.85;
 }
+.black-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 24px;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.black-btn:hover {
+    background-color: #333;
+    transform: translateY(-3px);
+}
