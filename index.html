@@ -4166,569 +4166,7 @@
         </div>
     </section>
 
-    <style>
-        .base-template__wrapper {
-            justify-content: flex-start;
-            position: absolute;
-            top: 50px;
-            z-index: 9;
-            width: 100%;
-
-        }
-
-        @media(max-width:800px) {
-            .base-template__wrapper {
-                top: 40px;
-
-            }
-        }
-
-
-        a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-
-
-        .header {
-            display: flex;
-            align-items: center;
-            position: absolute;
-            padding: 0 20px 0 40px;
-            width: 100%;
-            min-height: 82px;
-            background-color: #000000;
-        }
-
-        .header__logo {
-            max-width: unset;
-        }
-
-        .header__wrapper {
-            width: 100%;
-            display: flex;
-            align-items: center;
-        }
-
-        .header__navigation-wrapper {
-            display: flex;
-            width: 100%;
-            padding-left: 50px;
-        }
-
-        .header__list {
-            display: flex;
-            align-items: center;
-            gap: 28px;
-            margin: 0;
-            padding: 0;
-        }
-
-        .header__list-item {
-            display: flex;
-            padding: 30px 0 50px;
-            margin-bottom: -20px;
-            gap: 8px;
-            font-size: 16px;
-        }
-
-        .header__list-item>a {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            transition: var(--transition);
-        }
-
-        .header__list-item>a svg path {
-            transition: var(--transition);
-        }
-
-        .header__list-item .submenu-wrapper {
-            position: absolute;
-            width: 100%;
-            top: 110%;
-            left: 0;
-            border-radius: 33px;
-            padding: 30px 30px 50px 30px;
-            background-color: #000000;
-            opacity: 0;
-            visibility: hidden;
-            pointer-events: none;
-            transition: var(--transition);
-        }
-
-        .header__buttons-wrapper {
-            display: flex;
-            align-items: center;
-            gap: 30px;
-            margin-left: auto;
-        }
-
-        .header__button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 42px;
-            width: max-content;
-            padding: 6px 20px;
-            border-radius: 100px;
-            gap: 8px;
-            font-size: 16px;
-            font-weight: 400;
-            transition: var(--transition);
-        }
-
-        .submenu-list__title {
-            width: max-content;
-            margin-bottom: 25px;
-            font-size: 12px;
-            text-transform: uppercase;
-            color: rgba(160, 161, 165, 1);
-        }
-
-        .submenu-list {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            max-width: 295px;
-            padding-left: 0;
-        }
-
-        .submenu-list__item {
-            display: flex;
-            padding-right: 100px;
-            margin-right: -100px;
-            cursor: pointer;
-        }
-
-        .submenu-list__item-wrapper {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            padding: 6px 16px 6px 6px;
-            gap: 16px;
-            border-radius: 14px;
-            transition: var(--transition);
-        }
-
-        .submenu-list__item-wrapper>svg {
-            margin-left: auto;
-            opacity: 0;
-            visibility: hidden;
-            transition: var(--transition);
-        }
-
-        .submenu-list__wrapper {
-            position: relative;
-        }
-
-        .submenu-content {
-            position: absolute;
-            right: 0;
-            top: 0;
-            max-width: calc(100% - 365px);
-            opacity: 0;
-            visibility: hidden;
-            pointer-events: none;
-            transition: var(--transition);
-        }
-
-        .submenu-list__item.has-submenu.active .submenu-content {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .submenu-list__item.has-submenu.active .submenu-list__item-wrapper {
-            background-color: rgba(255, 255, 255, 0.04);
-        }
-
-        .submenu-list__item.has-submenu.active .submenu-list__item-wrapper>svg {
-            opacity: 1;
-            visibility: visible;
-            pointer-events: auto;
-        }
-
-        .submenu-list__item-link {
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-        }
-
-        .submenu-list__item-title {
-            font-size: 16px;
-            font-weight: 500;
-            color: #fff;
-        }
-
-        .submenu-list__item-icon {
-            display: flex;
-        }
-
-        .submenu-list__item-subtile {
-            font-size: 12px;
-            font-weight: 400;
-            color: rgba(160, 161, 165, 1);
-        }
-
-        .submenu-content__title {
-            width: max-content;
-            margin-bottom: 25px;
-            font-size: 12px;
-            text-transform: uppercase;
-            color: rgba(160, 161, 165, 1);
-        }
-
-        .submenu-content__list:not(.events) {
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            padding: 0;
-        }
-
-        .submenu-content__list.events {
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            padding: 0;
-        }
-
-        .submenu-content__list-item {
-            display: block;
-            border-radius: 20px;
-            background-color: rgba(255, 255, 255, 0.05);
-            cursor: auto;
-        }
-
-        .submenu-content__link {
-            display: flex;
-            flex-direction: column;
-            border-radius: 20px;
-            padding: 10px 10px 20px;
-            border: 1px solid transparent;
-            transition: var(--transition);
-        }
-
-        .submenu-content__link-img {
-            margin-bottom: 20px;
-            border-radius: 13px;
-            overflow: hidden;
-            transition: var(--transition);
-        }
-
-        .submenu-content__link-img img {
-            transition: 0.4s ease-in;
-        }
-
-        .submenu-content__link-title {
-            padding: 0 10px;
-            font-size: 16px;
-            font-weight: 500;
-            margin-bottom: 12px;
-        }
-
-        .submenu-content__link-text {
-            padding: 0 10px;
-            font-size: 12px;
-            color: rgba(160, 161, 165, 1);
-        }
-
-        .submenu-content__link-wrapper {
-            display: flex;
-            gap: 20px;
-            padding: 10px;
-            border-radius: 20px;
-            background-color: rgba(255, 255, 255, 0.05);
-        }
-
-        .submenu-content__list.events .submenu-content__link-img {
-            width: 100%;
-            max-width: 220px;
-            flex: 1;
-            border-radius: 13px;
-            margin-bottom: 0;
-        }
-
-        .submenu-content__info {
-            display: flex;
-            flex-direction: column;
-            flex: 1 0;
-        }
-
-        .submenu-content__category {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            width: max-content;
-            padding: 10px 20px;
-            margin-bottom: 20px;
-            border-radius: 30px;
-            font-size: 12px;
-            font-weight: 500;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            color: rgba(255, 255, 255, 0.7);
-        }
-
-        .submenu-content__list.events .submenu-content__link-title,
-        .submenu-content__list.events .submenu-content__link-text {
-            padding: 0;
-            margin-bottom: 12px;
-        }
-
-        .submenu-content__link-address,
-        .submenu-content__link-date {
-            display: flex;
-            align-items: center;
-            gap: 4px;
-            margin-bottom: 12px;
-            font-size: 12px;
-            font-weight: 400;
-            color: rgba(160, 161, 165, 1);
-        }
-
-        .submenu-content__link-address span,
-        .submenu-content__link-date span {
-            line-height: 0.9;
-        }
-
-        .submenu-content__url {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin-top: auto;
-            margin-bottom: 20px;
-            color: rgba(255, 255, 255, 1);
-            font-size: 14px;
-            transition: var(--transition);
-
-            svg,
-            svg path {
-                transition: var(--transition);
-            }
-        }
-
-        .header__burger {
-            display: none;
-            flex-direction: column;
-            align-items: flex-end;
-            gap: 4px;
-            width: 24px;
-            margin-left: auto;
-        }
-
-        .header__burger i {
-            width: 100%;
-            height: 2px;
-            background-color: #fff;
-            border-radius: 13px;
-            transition: var(--transition);
-        }
-
-        .header__burger.active i:nth-child(1) {
-            transform: rotate(45deg) translate(4px, 4px);
-        }
-
-        .header__burger.active i:nth-child(2) {
-            opacity: 0;
-        }
-
-        .header__burger.active i:nth-child(3) {
-            transform: rotate(-45deg) translate(4px, -5px);
-        }
-
-        @media (hover: hover) and (pointer: fine) {
-            .header__list-item:hover .submenu-wrapper {
-                opacity: 1;
-                visibility: visible;
-                pointer-events: auto;
-            }
-
-            .header__list-item:hover~.header__list-item .submenu-wrapper {
-                display: none;
-            }
-
-            .header__list-item:hover>a,
-            .header__list-item:hover>a svg path {}
-
-            .header__button:hover {
-                background-color: rgba(255, 255, 255, 0.05);
-            }
-
-            .submenu-list__item.has-submenu:hover .submenu-list__item-wrapper {
-                background-color: rgba(255, 255, 255, 0.04);
-            }
-
-            .submenu-list__item.has-submenu:hover .submenu-content,
-            .submenu-list__item.has-submenu:hover .submenu-list__item-wrapper>svg {
-                opacity: 1;
-                visibility: visible;
-                pointer-events: auto;
-            }
-
-            .submenu-content__list-item:hover .submenu-content__link {
-                border-color: rgba(255, 255, 255, 0.3);
-            }
-
-            .submenu-content__list-item:hover .submenu-content__link-img img {
-                transform: scale(1.05);
-            }
-
-            .submenu-content__url:hover,
-            .submenu-content__url:hover svg path {
-                color: var(--color-primary);
-                stroke: var(--color-primary);
-            }
-
-            .submenu-content__url:hover svg {
-                transform: translateX(5px);
-            }
-        }
-
-        @media screen and (max-width: 1280px) {
-            .header__navigation-wrapper {
-                padding-left: 25px;
-            }
-
-            .submenu-list {
-                max-width: 250px;
-            }
-
-            .submenu-content {
-                max-width: calc(100% - 270px);
-            }
-
-            .submenu-content__url {
-                margin-bottom: 0;
-            }
-        }
-
-        @media screen and (max-width: 1400px) {
-
-
-            .header {
-                min-height: 64px;
-                padding: 0 20px;
-            }
-
-            .header__burger {
-                display: flex;
-            }
-
-            .header__navigation-wrapper {
-                flex-direction: column;
-                align-items: center;
-                position: absolute;
-                top: 110%;
-                left: 0;
-                padding: 20px;
-                background-color: #000;
-                border-radius: 20px;
-                opacity: 0;
-                visibility: hidden;
-                transition: var(--transition);
-            }
-
-            .header__navigation-wrapper.open {
-                opacity: 1;
-                visibility: visible;
-            }
-
-            .header__list {
-                flex-direction: column;
-                gap: 30px;
-            }
-
-            .header__buttons-wrapper {
-                flex-direction: column;
-                margin-left: unset;
-                margin-top: 50px;
-                gap: 8px;
-            }
-
-            .header__navigation,
-            .header__list {
-                width: 100%;
-            }
-
-            .header__list-item {
-                flex-direction: column;
-                width: 100%;
-                padding: 0;
-                gap: 0;
-                margin: 0;
-            }
-
-            .header__list-item.active a,
-            .header__list-item.active a>svg path {}
-
-            .header__list-item .submenu-wrapper {
-                position: static;
-                padding: 0;
-                max-height: 0;
-                border-radius: 0;
-                opacity: 1;
-                visibility: visible;
-                pointer-events: all;
-                overflow: hidden;
-                transition: max-height var(--transition);
-            }
-
-            .submenu-list {
-                width: 100%;
-                max-width: 100%;
-                gap: 5px;
-            }
-
-            .submenu-list__wrapper {
-                margin-top: 30px;
-            }
-
-            .submenu-list__item {
-                width: 100%;
-                padding: 0;
-                margin: 0;
-            }
-
-            .submenu-list__item:active .submenu-list__item-wrapper {
-                background-color: rgba(255, 255, 255, 0.04);
-            }
-
-            .submenu-list__item:active .submenu-list__item-wrapper>svg {
-                opacity: 1;
-                visibility: visible;
-            }
-
-            .submenu-list__title {
-                display: none;
-            }
-
-            .submenu-content {
-                display: none;
-            }
-
-            .header__button {
-                border: 1px solid rgba(255, 255, 255, 1);
-            }
-        }
-
-        @media screen and (max-width: 1400px) {
-
-            .header__buttons-wrapper,
-            .header__button {
-                width: 80%;
-            }
-        }
-
-        @media screen and (max-width: 768px) {
-
-            .header__buttons-wrapper,
-            .header__button {
-                width: 100%;
-            }
-        }
-    </style>
+ 
     <script>
         window.addEventListener("DOMContentLoaded", () => {
             const burger = document.querySelector(".header__burger");
@@ -4824,7 +4262,7 @@
 
             <!-- Slide 1 -->
             <div class="swiper-slide">
-                <div class="hero-metal dark-section parallaxie">
+                <div class="hero-metal dark-section ">
                     <div class="container">
                         <div class="row align-items-center">
 
@@ -4852,7 +4290,7 @@
 
             <!-- Slide 2 -->
             <div class="swiper-slide">
-                <div class="hero-metal dark-section parallaxie">
+                <div class="hero-metal hero-metal-2 dark-section ">
                     <div class="container">
                         <div class="row align-items-center">
 
@@ -4880,7 +4318,33 @@
 
             <!-- Slide 3 -->
             <div class="swiper-slide">
-                <div class="hero-metal dark-section parallaxie">
+                <div class="hero-metal hero-metal-3 dark-section ">
+                    <div class="container">
+                        <div class="row align-items-center">
+
+                            <div class="col-xl-7">
+                                <div class="hero-content-metal">
+                                    <div class="section-title">
+                                        <h3>Trusted Rack Manufacturer in Mumbai</h3>
+                                        <h1>ENGINEERED FOR STRENGTH DESIGNED FOR BUSINESS.</h1>
+                                        <p>With years of industry expertise, we provide durable, customizable racking
+                                            systems that help businesses organize smarter and grow faster.</p>
+                                        <div class="hero-btn">
+                                            <a href="contact.html" class="black-btn">Contact Us</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <!-- Slide 3 -->
+            <div class="swiper-slide">
+                <div class="hero-metal hero-metal-4 dark-section ">
                     <div class="container">
                         <div class="row align-items-center">
 
@@ -5234,8 +4698,8 @@
                                 <div class="icon-box">
                                     <img src="images/icon-why-choose-item-1-metal.svg" alt="">
                                 </div>
-                                <div class="why-choose-item-content-metal">
-                                    <h3>Timely Project Delivery</h3>
+                                <div class="why-choose-item-content-metal h1white">
+                                    <h3 class="h1white" >Timely Project Delivery</h3>
                                     <p>We ensure every project stays.</p>
                                 </div>
                             </div>
@@ -5246,8 +4710,8 @@
                                 <div class="icon-box">
                                     <img src="images/icon-why-choose-item-1-metal.svg" alt="">
                                 </div>
-                                <div class="why-choose-item-content-metal">
-                                    <h3>Timely Project Delivery</h3>
+                                <div class="why-choose-item-content-metal h1white">
+                                    <h3 class="h1white">Timely Project Delivery</h3>
                                     <p>We ensure every project stays.</p>
                                 </div>
                             </div>
@@ -5260,18 +4724,19 @@
                             <!-- Skills Progress Bar Start -->
                             <div class="skills-progress-bar-metal">
                                 <!-- Skill Item Start -->
-                                <div class="skillbar-metal" data-percent="85%">
+                                <div class="skillbar-metal" data-percent="95%">
                                     <div class="skill-data-metal">
-                                        <div class="skill-title-metal">Heavy-Duty Rack Installation</div>
-                                        <div class="skill-no-metal">85%</div>
+                                        <div class="skill-title-metal">Quality Assuarance</div>
+                                        <div class="skill-no-metal">95%</div>
                                     </div>
                                     <div class="skill-progress-metal">
                                         <div class="count-bar-metal"></div>
                                     </div>
                                 </div>
+                                <br> <br>
                                 <div class="skillbar-metal" data-percent="85%">
                                     <div class="skill-data-metal">
-                                        <div class="skill-title-metal">Industrial Storage Solutions</div>
+                                        <div class="skill-title-metal">Success Rate</div>
                                         <div class="skill-no-metal">85%</div>
                                     </div>
                                     <div class="skill-progress-metal">
@@ -5287,7 +4752,7 @@
 
                         <!-- Why Choose Button Start -->
                         <div class="why-choose-btn-metal wow fadeInUp" data-wow-delay="0.6s">
-                            <a href="contact.html" class="btn-default">Contact Us</a>
+                            <a href="contact.html" class="whitebtn">Contact Us</a>
                         </div>
                         <!-- Why Choose Button End -->
                     </div>
@@ -5299,54 +4764,98 @@
     <!-- Why Choose Us Section End -->
 
  <!-- Our Testimonials Section Start -->
-    <div class="our-testimonials-metal ">
+<div class="our-testimonials">
         <div class="container">
             <div class="row section-row">
                 <div class="col-lg-12">
                     <!-- Section Title Start -->
                     <div class="section-title section-title-center">
-                        <h3 class="wow fadeInUp">Testimonials</h3>
-                        <h2 class="text-anime-style-3" data-cursor="-opaque">Real Stories From Our Valued Customers</h2>
+                        <h3 class="wow fadeInUp iconsvg">Our Testimonials</h3>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Voices of Appreciation from Our Happy
+                            Clients</h2>
                     </div>
                     <!-- Section Title End -->
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-xl-4 col-md-6">
+                    <!-- Testimonial Image Box Start -->
+                    <div class="testimonial-image-box wow fadeInUp">
+                        <!-- Testimonial Image Start -->
+                        <div class="testimonial-image">
+                            <figure class="image-anime">
+                                <img src="images/our-testimonial-image.jpg" alt="">
+                            </figure>
+                        </div>
+                        <!-- Testimonial Image End -->
+
+                        <!-- Testimonial Client Box Start -->
+                        <div class="testimonial-client-box">
+                            <!-- Satisfy Client Images Start -->
+                            <div class="satisfy-client-images">
+                                <div class="satisfy-client-image">
+                                    <figure class="image-anime">
+                                        <img src="images/author-1.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div class="satisfy-client-image">
+                                    <figure class="image-anime">
+                                        <img src="images/author-2.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div class="satisfy-client-image">
+                                    <figure class="image-anime">
+                                        <img src="images/author-3.jpg" alt="">
+                                    </figure>
+                                </div>
+
+                                <div class="satisfy-client-image">
+                                    <figure class="image-anime">
+                                        <img src="images/author-4.jpg" alt="">
+                                    </figure>
+                                </div>
+
+                                <div class="satisfy-client-image add-more">
+                                    <h3><span class="counter">15</span>+</h3>
+                                </div>
+                            </div>
+                            <!-- Satisfy Client Images End -->
+
+                            <div class="testimonial-client-box-content">
+                                <h3>Satisfied Customers Across Regions</h3>
+                            </div>
+                        </div>
+                        <!-- Testimonial Client Box End -->
+                    </div>
+                    <!-- Testimonial Image Box End -->
+                </div>
+
+                <div class="col-xl-8 col-md-6">
                     <!-- Testimonial Slider Start -->
-                    <div class="testimonial-slider-metal wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="testimonial-slider wow fadeInUp" data-wow-delay="0.2s">
                         <div class="swiper">
                             <div class="swiper-wrapper" data-cursor-text="Drag">
                                 <!-- Testimonial Slide Start -->
                                 <div class="swiper-slide">
                                     <!-- Testimonial Item Start -->
-                                    <div class="testimonial-item-metal">
-                                        <div class="testimonial-item-header-metal">
-                                            <div class="testimonial-item-rating-metal">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-item-header">
+
+                                            <div class="testimonial-item-quote">
+                                                <img src="images/testimonial-item-quote.svg" alt="">
                                             </div>
-                                            <div class="testimonial-item-content-metal">
-                                                <h3>“Exceptional ideas & execution”</h3>
+                                        </div>
+                                        <div class="testimonial-item-body">
+                                            <div class="testimonial-item-content">
                                                 <p>We installed display racks in our supermarket, and honestly, the
                                                     space utilization has improved significantly. The products are now
                                                     properly visible, and the overall look of the store feels much more
                                                     professional.</p>
                                             </div>
-                                        </div>
-                                        <div class="testimonial-author-metal">
-                                            <div class="testimonial-author-image-metal">
-                                                <figure class="image-anime">
-                                                    <img src="images/author-1.jpg" alt="">
-                                                </figure>
-                                            </div>
-                                            <div class="testimonial-author-content-metal">
-                                                <h3>Riya Patel</h3>
-                                                <p>Residential Project</p>
+                                            <div class="testimonial-author-content">
+                                                <h3>Aamir Khan</h3>
+                                                <p>Warehouse Manager</p>
                                             </div>
                                         </div>
                                     </div>
@@ -5357,32 +4866,23 @@
                                 <!-- Testimonial Slide Start -->
                                 <div class="swiper-slide">
                                     <!-- Testimonial Item Start -->
-                                    <div class="testimonial-item-metal">
-                                        <div class="testimonial-item-header-metal">
-                                            <div class="testimonial-item-rating-metal">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-item-header">
+
+                                            <div class="testimonial-item-quote">
+                                                <img src="images/testimonial-item-quote.svg" alt="">
                                             </div>
-                                            <div class="testimonial-item-content-metal">
-                                                <h3>“Perfect Fit for Our Warehouse”</h3>
+                                        </div>
+                                        <div class="testimonial-item-body">
+                                            <div class="testimonial-item-content">
                                                 <p>For our new warehouse project, Saif & Brothers provided a complete
                                                     storage solution. The rack structure is durable and the finishing is
                                                     clean and well-done. The installation was fast, and their
                                                     coordination process was highly organized and professional.</p>
                                             </div>
-                                        </div>
-                                        <div class="testimonial-author-metal">
-                                            <div class="testimonial-author-image-metal">
-                                                <figure class="image-anime">
-                                                    <img src="images/author-3.jpg" alt="">
-                                                </figure>
-                                            </div>
-                                            <div class="testimonial-author-content-metal">
-                                                <h3>Manish Sharma</h3>
-                                                <p>Commercial Office Design</p>
+                                            <div class="testimonial-author-content">
+                                                <h3>Rahul Mehta</h3>
+                                                <p>Retail Store Owner</p>
                                             </div>
                                         </div>
                                     </div>
@@ -5393,69 +4893,24 @@
                                 <!-- Testimonial Slide Start -->
                                 <div class="swiper-slide">
                                     <!-- Testimonial Item Start -->
-                                    <div class="testimonial-item-metal">
-                                        <div class="testimonial-item-header-metal">
-                                            <div class="testimonial-item-rating-metal">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                            <div class="testimonial-item-content-metal">
-                                                <h3>“Reliable & Professional Service”</h3>
-                                                <p>The team delivered a modern office space perfectly reflects our brand
-                                                    identity. The planning, materials, and workmanship were top-notch.
-                                                    Our employees love the new environmentFrom layout planning to final
-                                                    installation, everything was smooth and on schedule. The racks are
-                                                    strong, durable, and exactly as promised. Great experience working
-                                                    with them.!</p>
-                                            </div>
-                                        </div>
-                                        <div class="testimonial-author-metal">
-                                            <div class="testimonial-author-image-metal">
-                                                <figure class="image-anime">
-                                                    <img src="images/author-2.jpg" alt="">
-                                                </figure>
-                                            </div>
-                                            <div class="testimonial-author-content-metal">
-                                                <h3>Sanya Kapoor</h3>
-                                                <p>Retail Interior Project</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Testimonial Item End -->
-                                </div>
-                                <!-- Testimonial Slide End -->
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-item-header">
 
-                                <!-- Testimonial Slide Start -->
-                                <div class="swiper-slide">
-                                    <!-- Testimonial Item Start -->
-                                    <div class="testimonial-item-metal">
-                                        <div class="testimonial-item-header-metal">
-                                            <div class="testimonial-item-rating-metal">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                            <div class="testimonial-item-content-metal">
-                                                <h3>“Exceptional ideas & execution”</h3>
-                                                <p>The team delivered a modern office space perfectly reflects our brand
-                                                    identity. The planning, materials, and workmanship were top-notch.
-                                                    Our employees love the new environment!</p>
+                                            <div class="testimonial-item-quote">
+                                                <img src="images/testimonial-item-quote.svg" alt="">
                                             </div>
                                         </div>
-                                        <div class="testimonial-author-metal">
-                                            <div class="testimonial-author-image-metal">
-                                                <figure class="image-anime">
-                                                    <img src="images/author-4.jpg" alt="">
-                                                </figure>
+                                        <div class="testimonial-item-body">
+                                            <div class="testimonial-item-content">
+                                                <p>Saif & Brothers installed heavy-duty racks for our warehouse that
+                                                    turned out to be a perfect fit. The quality is strong and reliable,
+                                                    and the entire setup was completed on time. Their team handled
+                                                    everything smoothly—from planning to installation—with great
+                                                    professionalism.</p>
                                             </div>
-                                            <div class="testimonial-author-content-metal">
-                                                <h3>Courtney Henry</h3>
-                                                <p>Web Designer</p>
+                                            <div class="testimonial-author-content">
+                                                <h3>Imran Shaikh</h3>
+                                                <p>Logistics Supervisor</p>
                                             </div>
                                         </div>
                                     </div>
@@ -5483,25 +4938,12 @@
                             </div>
                         </div> -->
                         <!-- Satisfy Client Images End -->
-                        <!-- <p>Experience design where vision and precision come together beautifully - <a
-                                href="contact.html">Contact Us Today</a></p> -->
-                        <ul>
-                            <!-- <li><span class="counter">4.9</span>/5</li> -->
-                            <li>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </li>
-                            <li></li>
-                        </ul>
+
+                        <!-- Section FooteReliable storage r Text End -->
                     </div>
-                    <!-- Section Footer Text End -->
                 </div>
             </div>
         </div>
-    </div>
     <!-- Our Testimonials Section End -->
 
 
