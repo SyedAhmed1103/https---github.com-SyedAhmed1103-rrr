@@ -6867,6 +6867,13 @@ header.main-header .header-sticky.active{
 	align-items: end;
 	gap: 30px;
 	margin-right: 25px;
+	filter: brightness(0) invert(1);
+
+	    
+}
+
+.whiteimg{
+	filter: unset !important;
 }
 
 .about-us-image-box-1-metal{
@@ -6916,12 +6923,13 @@ header.main-header .header-sticky.active{
 	font-size: 48px;
 	font-weight: 700;
 	line-height: 1em;
-	background: linear-gradient(90deg, var(--accent-secondary-color) 0%, var(--accent-color) 100%);
+	background: linear-gradient(90deg, var(--bg-color) 0%, var(--bg-color) 100%);
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
 .about-counter-box-metal p{
+	color: var(--bg-color);
 	margin: 5px 0 0;
 }
 
@@ -6948,7 +6956,7 @@ header.main-header .header-sticky.active{
 	font-size: 20px;
 	font-weight: 600;
 	line-height: 1.5em;
-	color: var(--primary-color);
+	color: var(--bg-color);
 	padding-left: 30px;
 }
 
@@ -6958,7 +6966,7 @@ header.main-header .header-sticky.active{
     font-family: 'Font Awesome 7 Free';
     font-size: 20px;
     font-weight: 900;
-	background: linear-gradient(90deg, var(--accent-secondary-color) 0%, var(--accent-color) 100%);
+	background: linear-gradient(90deg, var(--bg-color) 0%, var(--bg-color) 100%);
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
     top: 0;
@@ -6994,6 +7002,7 @@ header.main-header .header-sticky.active{
 }
 
 .about-achievement-content-metal p{
+	color: var(--bg-color);
 	margin: 0;
 }
 
@@ -7006,6 +7015,7 @@ header.main-header .header-sticky.active{
 }
 
 .about-client-box-content-metal p{
+	color: var(--bg-color);
 	margin: 0;
 }
 
