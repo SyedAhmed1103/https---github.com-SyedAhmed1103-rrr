@@ -11055,3 +11055,48 @@ header.main-header .header-sticky.active{
 		padding: 15px 0;
 	}
 }
+.footer-contact-box h3 {
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    background: #b89b5e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.contact-icon i {
+    color: #fff;
+    font-size: 18px;
+}
+
+.contact-text h4 {
+    color: #fff;
+    margin: 0;
+    font-size: 16px;
+}
+
+.contact-text p {
+    margin: 5px 0 0;
+}
+
+.contact-text a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.contact-text a:hover {
+    color: #b89b5e;
+}
