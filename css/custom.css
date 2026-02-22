@@ -11944,3 +11944,13 @@ header.main-header .header-sticky.active{
 		.h1white{
 			color: white;
 		}
+
+
+
+
+.submenu-content__link-img img {
+         width: 100%;
+    aspect-ratio: 1 / 0.81;
+    object-fit: cover;
+    border-radius: 20px;
+}
