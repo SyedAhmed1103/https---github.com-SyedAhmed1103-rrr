@@ -812,7 +812,7 @@ header.main-header .header-sticky.active{
 
 .hero{
 	position: relative;
-	background-image: url('../images/hero-bg.jpg');
+	background-image: url('../images/hero-bg.webp');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -3011,7 +3011,7 @@ header.main-header .header-sticky.active{
 
 .page-header{
 	position: relative;
-	background: url('../images/page-header-bg.jpg') no-repeat;
+	background: url('../images/page-header-bg.webp') no-repeat;
 	background-position: center center;
 	background-size: cover;
 	padding: 260px 0 150px;
@@ -3415,7 +3415,7 @@ header.main-header .header-sticky.active{
 
 .cta-box{
 	position: relative;
-	background-image: url('../images/cta-bg.jpg');
+	background-image: url('../images/cta-bg.webp');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -3696,7 +3696,7 @@ header.main-header .header-sticky.active{
 
 .sidebar-cta-box{
 	position: relative;
-    background: url('../images/sidebar-cta-bg.jpg') no-repeat;
+    background: url('../images/sidebar-cta-bg.webp') no-repeat;
 	background-position: center center;
 	background-size: cover;
 	text-align: center;
@@ -6632,7 +6632,7 @@ header.main-header .header-sticky.active{
 
 .hero-metal{
 	position: relative;
-	background: url('../images/hero-bg-image-metal.jpg') no-repeat;
+	background: url('../images/hero-bg-image-metal.webp') no-repeat;
 	background-position: center center;
 	background-size: cover;
 	padding: 195px 0 90px;
@@ -6640,7 +6640,7 @@ header.main-header .header-sticky.active{
 }
 
 .hero-metal-2{
-	background: url('../images/hero-bg-image-metal2.jpg') no-repeat;
+	background: url('../images/hero-bg-image-metal2.webp') no-repeat;
 		background-position: top top;
 	background-size: cover;
 	padding: 195px 0 90px;
@@ -6648,7 +6648,7 @@ header.main-header .header-sticky.active{
 
 }
 .hero-metal-3{
-	background: url('../images/hero-bg-image-metal3.jpg') no-repeat;
+	background: url('../images/hero-bg-image-metal3.webp') no-repeat;
 		background-position: center center;
 	background-size: cover;
 	padding: 195px 0 90px;
@@ -6656,7 +6656,7 @@ header.main-header .header-sticky.active{
 
 }
 .hero-metal-4{
-	background: url('../images/hero-bg-image-metal4.jpg') no-repeat;
+	background: url('../images/hero-bg-image-metal4.webp') no-repeat;
 		background-position: center center;
 	background-size: cover;
 	padding: 195px 0 90px;
@@ -8682,7 +8682,7 @@ header.main-header .header-sticky.active{
 
 .hero-elite{
 	position: relative;
-	background-image: url('../images/hero-bg-elite.jpg');
+	background-image: url('../images/hero-bg-elite.webp');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
