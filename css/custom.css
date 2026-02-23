@@ -11457,9 +11457,10 @@ header.main-header .header-sticky.active{
 
         .header__list-item .submenu-wrapper {
             position: absolute;
-            width: 100%;
+            width: 80%;
             top: 110%;
-            left: 0;
+            left: 50%;
+			transform: translate(-50%,0%);
             border-radius: 33px;
             padding: 30px 30px 50px 30px;
             background-color: #000000;
