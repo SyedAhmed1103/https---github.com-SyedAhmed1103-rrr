@@ -7286,7 +7286,7 @@ header.main-header .header-sticky.active{
 	top: 0;
 	left: 0;
 	bottom: 0;
-    background: linear-gradient(121deg, #00ff03 0%, #27ff00 100%);
+    background: #333;
 	border-radius: 100px;
 }
 
@@ -11949,8 +11949,8 @@ header.main-header .header-sticky.active{
 
 
 .submenu-content__link-img img {
-         width: 100%;
-    aspect-ratio: 1 / 0.81;
+         width: 500px;
     object-fit: cover;
     border-radius: 20px;
+	max-height: 250px;
 }
