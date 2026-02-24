@@ -11409,7 +11409,7 @@ header.main-header .header-sticky.active{
             padding: 0 20px 0 40px;
             width: 100%;
             min-height: 82px;
-            background-color: #000000;
+            background-color: gold;
         }
 
         .header__logo {
@@ -11449,7 +11449,9 @@ header.main-header .header-sticky.active{
             align-items: center;
             gap: 8px;
             transition: var(--transition);
+			color: black !important;
         }
+
 
         .header__list-item>a svg path {
             transition: var(--transition);
@@ -11459,18 +11461,18 @@ header.main-header .header-sticky.active{
             position: absolute;
             width: 80%;
             top: 110%;
-            left: 50%;
+            left: 60%;
 			transform: translate(-50%,0%);
             border-radius: 33px;
             padding: 30px 30px 50px 30px;
-            background-color: #000000;
+            background-color: gold;
             opacity: 0;
             visibility: hidden;
             pointer-events: none;
             transition: var(--transition);
         }
 
-		@media(max-width:1400px){
+		@media(max-width:1300px){
 			        .header__list-item .submenu-wrapper {
             position: absolute;
             width: 100%;
@@ -11479,7 +11481,7 @@ header.main-header .header-sticky.active{
 			transform: unset;
             border-radius: 33px;
             padding: 30px 30px 50px 30px;
-            background-color: #000000;
+            background-color: gold;
             opacity: 0;
             visibility: hidden;
             pointer-events: none;
@@ -11513,7 +11515,7 @@ header.main-header .header-sticky.active{
             margin-bottom: 25px;
             font-size: 12px;
             text-transform: uppercase;
-            color: rgba(160, 161, 165, 1);
+            color: #000;
         }
 
         .submenu-list {
@@ -11587,7 +11589,7 @@ header.main-header .header-sticky.active{
         .submenu-list__item-title {
             font-size: 16px;
             font-weight: 500;
-            color: #fff;
+            color: #000;
         }
 
         .submenu-list__item-icon {
@@ -11605,8 +11607,13 @@ header.main-header .header-sticky.active{
             margin-bottom: 25px;
             font-size: 12px;
             text-transform: uppercase;
-            color: rgba(160, 161, 165, 1);
+            color: #000;
         }
+		.submenu-content__link-title{
+            color: #000;
+
+		}
+
 
         .submenu-content__list:not(.events) {
             width: 100%;
@@ -11627,7 +11634,7 @@ header.main-header .header-sticky.active{
         .submenu-content__list-item {
             display: block;
             border-radius: 20px;
-            background-color: rgba(255, 255, 255, 0.05);
+            background-color: rgb(0 0 0 / 5%);
             cursor: auto;
         }
 
@@ -11661,7 +11668,7 @@ header.main-header .header-sticky.active{
         .submenu-content__link-text {
             padding: 0 10px;
             font-size: 12px;
-            color: rgba(160, 161, 165, 1);
+            color: #000;
         }
 
         .submenu-content__link-wrapper {
@@ -11750,7 +11757,7 @@ header.main-header .header-sticky.active{
         .header__burger i {
             width: 100%;
             height: 2px;
-            background-color: #fff;
+            background-color: #000;
             border-radius: 13px;
             transition: var(--transition);
         }
@@ -11797,7 +11804,6 @@ header.main-header .header-sticky.active{
             }
 
             .submenu-content__list-item:hover .submenu-content__link {
-                border-color: rgba(255, 255, 255, 0.3);
             }
 
             .submenu-content__list-item:hover .submenu-content__link-img img {
@@ -11833,7 +11839,7 @@ header.main-header .header-sticky.active{
             }
         }
 
-        @media screen and (max-width: 1400px) {
+        @media screen and (max-width: 1300px) {
 
 
             .header {
@@ -11852,7 +11858,7 @@ header.main-header .header-sticky.active{
                 top: 110%;
                 left: 0;
                 padding: 20px;
-                background-color: #000;
+                background-color: gold;
                 border-radius: 20px;
                 opacity: 0;
                 visibility: hidden;
@@ -11942,7 +11948,7 @@ header.main-header .header-sticky.active{
             }
         }
 
-        @media screen and (max-width: 1400px) {
+        @media screen and (max-width: 1300px) {
 
             .header__buttons-wrapper,
             .header__button {
@@ -11971,4 +11977,10 @@ header.main-header .header-sticky.active{
     object-fit: cover;
     border-radius: 20px;
 	max-height: 250px;
+}
+
+.header__navigation{
+	    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
