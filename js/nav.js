@@ -82,3 +82,48 @@
 		});
 	});
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    function toggleLinks() {
+
+        document.querySelectorAll(".disable-link-mobile").forEach(function(li) {
+
+            const link = li.querySelector("a");
+
+            if (!link) return;
+
+            // original href save (sirf ek baar)
+            if (!link.dataset.href && link.getAttribute("href")) {
+                link.dataset.href = link.getAttribute("href");
+            }
+
+            if (window.innerWidth <= 768) {
+
+                link.removeAttribute("href");
+                link.style.color = "#fff";
+                link.style.pointerEvents = "none";
+                link.style.cursor = "default";
+
+            } else {
+
+                // desktop pe href restore
+                if (link.dataset.href) {
+                    link.setAttribute("href", link.dataset.href);
+                }
+
+                link.style.color = "";
+                link.style.pointerEvents = "";
+                link.style.cursor = "";
+
+            }
+
+        });
+
+    }
+
+    toggleLinks();
+    window.addEventListener("resize", toggleLinks);
+
+});

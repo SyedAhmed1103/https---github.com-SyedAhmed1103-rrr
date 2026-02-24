@@ -11470,6 +11470,23 @@ header.main-header .header-sticky.active{
             transition: var(--transition);
         }
 
+		@media(max-width:1400px){
+			        .header__list-item .submenu-wrapper {
+            position: absolute;
+            width: 100%;
+            top: 110%;
+            left: 0%;
+			transform: unset;
+            border-radius: 33px;
+            padding: 30px 30px 50px 30px;
+            background-color: #000000;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: var(--transition);
+        }
+		}
+
         .header__buttons-wrapper {
             display: flex;
             align-items: center;
