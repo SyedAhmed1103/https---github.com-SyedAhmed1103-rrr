@@ -2978,7 +2978,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const formData = new FormData(form);
 
     try {
-      const response = await fetch("send_newsletter.php", {
+      const response = await fetch("../send_newsletter.php", {
         method: "POST",
         body: formData
       });
