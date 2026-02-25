@@ -2905,30 +2905,113 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <!-- Footer Header Start -->
-                        <div class="footer-header-metal">
-                            <!-- Section Title Start -->
-                            <div class="section-title">
-                                <h2 class="text-anime-style-3" data-cursor="-opaque">Let's Build Your Dream Space</h2>
-                            </div>
-                            <!-- Section Title End -->
+                          <div class="footer-header-metal">
+                        <!-- Section Title Start -->
+                <div class="row align-items-center col-12">
 
-                            <!-- Footer Social Icons Start -->
-                            <div class="footer-social-links-metal">
-                                <ul>
-                                    <!-- <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li> -->
-                                    <li>
-                                        <a href="https://wa.me/919920947358" >
-                                            <i class="fa-brands fa-whatsapp"></i>
-                                        </a>
-                                    </li>
-                                    <li><a href="https://www.facebook.com/saifandbrothers"><i
-                                                class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="https://www.instagram.com/saifandbrothers/"><i
-                                                class="fa-brands fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                            <!-- Footer Social Icons End -->
-                        </div>
+    <!-- Title Section -->
+    <div class="section-title col-12 col-md-12 col-lg-8">
+        <h2 class="text-anime-style-3" data-cursor="-opaque">
+            Subscribe To Our Newsletter
+        </h2>
+    </div>
+
+    <!-- Newsletter Form -->
+    <div class="footer-social-links-metal col-12 col-md-12 col-lg-4">
+        <div class="footer-newsletter-form-elite">
+            <form id="newslettersForm" action="#" method="POST">
+    <div class="form-group d-flex">
+        <input type="email" name="mail" id="newsletterEmail" class="form-control"
+            placeholder="Email Address" required>
+        <button type="submit" class="newsletter-btn ms-2" id="newsletterBtn">
+            <span id="newsBtnText">
+                <i class="fa-regular fa-paper-plane"></i>
+            </span>
+            <span id="newsBtnLoader" style="display:none;">
+                <i class="fa fa-spinner fa-spin"></i>
+            </span>
+        </button>
+    </div>
+</form>
+            <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const form = document.getElementById("newslettersForm");
+  const btn = document.getElementById("newsletterBtn");
+  const btnText = document.getElementById("newsBtnText");
+  const btnLoader = document.getElementById("newsBtnLoader");
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const email = document.getElementById("newsletterEmail").value.trim();
+
+    if (!email) {
+      showToast("Please enter your email ❌", "error");
+      return;
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+    if (!emailPattern.test(email)) {
+      showToast("Invalid email address ❌", "error");
+      return;
+    }
+
+    btn.disabled = true;
+    btnText.style.display = "none";
+    btnLoader.style.display = "inline-block";
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("send_newsletter.php", {
+        method: "POST",
+        body: formData
+      });
+
+      const result = await response.json();
+
+      if (result.status === "success") {
+        showToast(result.message, "success");
+        form.reset();
+      } else {
+        showToast(result.message || "Something went wrong ❌", "error");
+      }
+
+    } catch (error) {
+      showToast("Server error. Try again later ❌", "error");
+    }
+
+    btn.disabled = false;
+    btnText.style.display = "inline-block";
+    btnLoader.style.display = "none";
+  });
+
+  function showToast(message, type) {
+    const toast = document.createElement("div");
+    toast.innerText = message;
+    toast.style.position = "fixed";
+    toast.style.top = "20px";
+    toast.style.right = "20px";
+    toast.style.padding = "12px 20px";
+    toast.style.color = "#fff";
+    toast.style.borderRadius = "5px";
+    toast.style.zIndex = "9999";
+    toast.style.fontSize = "14px";
+    toast.style.backgroundColor = type === "success" ? "#28a745" : "#dc3545";
+    document.body.appendChild(toast);
+
+    setTimeout(() => toast.remove(), 3000);
+  }
+
+});
+</script>
+        </div>
+    </div>
+
+</div>
+                        <!-- Footer Social Icons End -->
+                    </div>
                         <!-- Footer Header End -->
                     </div>
 
