@@ -1,47 +1,9 @@
 {
   "products":[
-    
     {
       "slug":"office-rack",
       "name":"Office Rack",
-      "description":"Our Office Rack is a reliable and heavy-duty storage solution designed to keep your workspace organized, efficient, and clutter-free.<br><br>Whether you need to store important office files, documents, cartons, office supplies, tools, or other materials, this rack helps create a clean and well-structured storage system that improves productivity and accessibility in the workplace.",
-
-      "images":[  
-        "../images/slotted-angle-rack/1.webp",
-        "../images/slotted-angle-rack/2.webp",
-        "../images/slotted-angle-rack/3.webp"
-      ],
-
-      "accordion":[
-
-        {
-          "title":"Product Description",
-          "content":"This premium office rack is engineered for modern workplaces where organized storage is essential. Built with strong slotted angle steel, it offers durability, stability, and long-term performance."
-        },
-
-        {
-          "title":"Key Features",
-          "content":"Heavy duty steel construction.<br>Adjustable shelves for flexible storage.<br>Rust resistant powder coated finish.<br>Easy bolt and nut assembly."
-        },
-
-        {
-          "title":"Dimensions",
-          "content":"Height: 200 cm<br>Width: 120 cm<br>Depth: 45 cm"
-        },
-
-        {
-          "title":"Applications",
-          "content":"Ideal for offices, record rooms, libraries, warehouses, and commercial storage environments."
-        }
-
-      ]
-    },
-
-
-    {
-      "slug":"warehouse-rack",
-      "name":"Warehouse Rack",
-      "description":"Our Warehouse Rack is designed for heavy-duty storage applications where strength and durability are essential. It helps organize cartons, materials, and inventory efficiently in warehouse environments.",
+      "description":"Our Office Rack is a premium heavy-duty storage solution designed to keep workplaces organized, professional, and clutter-free.<br><br>Manufactured using high-quality steel and a strong slotted angle rack structure, this storage system provides excellent durability, stability, and long-term performance. It is ideal for storing office files, documents, folders, cartons, and daily office supplies while maintaining easy accessibility and proper organization.<br><br>The adjustable shelving system allows flexible height customization, making it suitable for different file sizes and storage requirements. Its modular bolt-and-nut assembly ensures easy installation and expansion.<br><br>This steel office storage rack is widely used in offices, libraries, record rooms, and commercial workplaces where efficient document storage is essential.",
 
       "images":[
         "../images/slotted-angle-rack/1.webp",
@@ -52,11 +14,42 @@
       "accordion":[
         {
           "title":"Product Description",
-          "content":"A strong and reliable storage rack specially designed for warehouses and industrial storage environments."
+          "content":"This office rack is designed to maintain organized document storage and efficient workspace management.<br><br>Built with durable slotted angle steel, it offers excellent strength and stability. The adjustable shelf design allows flexible storage for files, cartons, and office materials.<br><br>Its modular bolt-and-nut assembly makes installation simple and allows easy expansion whenever storage needs grow."
         },
         {
           "title":"Key Features",
-          "content":"High load capacity.<br>Durable steel structure.<br>Adjustable shelves.<br>Long-lasting powder coating."
+          "content":"Heavy duty steel construction for long-lasting durability.<br>Adjustable shelves for flexible storage capacity.<br>Powder coated anti-rust finish for longer lifespan.<br>Strong slotted angle structure for load bearing strength."
+        },
+        {
+          "title":"Dimensions",
+          "content":"Height: 200 cm<br>Width: 120 cm<br>Depth: 45 cm"
+        },
+        {
+          "title":"Applications",
+          "content":"Corporate offices.<br>Record rooms.<br>Libraries and institutions.<br>Administrative departments."
+        }
+      ]
+    },
+
+    {
+      "slug":"warehouse-rack",
+      "name":"Warehouse Rack",
+      "description":"Our Warehouse Rack is a heavy-duty industrial storage rack designed for efficient warehouse organization and inventory management.<br><br>Constructed using premium steel slotted angle frames, it provides excellent strength and stability for storing cartons, tools, equipment, and bulk materials.<br><br>The adjustable shelf design allows flexible storage while maximizing vertical warehouse space.<br><br>This rack is widely used in warehouses, factories, logistics hubs, and distribution centers where durable industrial storage systems are required.",
+
+      "images":[
+        "../images/slotted-angle-rack/1.webp",
+        "../images/slotted-angle-rack/2.webp",
+        "../images/slotted-angle-rack/3.webp"
+      ],
+
+      "accordion":[
+        {
+          "title":"Product Description",
+          "content":"This warehouse rack is engineered for industrial storage environments that require strong and reliable shelving.<br><br>Its slotted angle steel frame provides exceptional durability while the adjustable shelving allows flexible storage of different sized products."
+        },
+        {
+          "title":"Key Features",
+          "content":"Heavy-duty steel structure for industrial storage.<br>High load-bearing capacity shelves.<br>Adjustable shelving system.<br>Durable powder-coated finish."
         },
         {
           "title":"Dimensions",
@@ -64,16 +57,15 @@
         },
         {
           "title":"Applications",
-          "content":"Warehouses, factories, logistics storage, and industrial inventory systems."
+          "content":"Warehouses.<br>Factories.<br>Distribution centers.<br>Industrial storage facilities."
         }
       ]
     },
-
 
     {
       "slug":"file-storage-rack",
       "name":"File Storage Rack",
-      "description":"Our File Storage Rack is designed to store office documents, files, and folders in a structured and organized manner.",
+      "description":"The File Storage Rack is designed for efficient document management and organized office storage.<br><br>Made from strong steel slotted angle frames, it provides excellent durability and stability for storing files, folders, and office documents.<br><br>The adjustable shelf design allows flexible arrangement of files while keeping documents easily accessible.",
 
       "images":[
         "../images/slotted-angle-rack/1.webp",
@@ -84,28 +76,27 @@
       "accordion":[
         {
           "title":"Product Description",
-          "content":"Perfect storage solution for maintaining office records and documents efficiently."
+          "content":"This rack helps maintain a well-organized filing system in offices and record rooms.<br><br>Its durable steel construction supports heavy document loads while adjustable shelves allow efficient storage."
         },
         {
           "title":"Key Features",
-          "content":"Adjustable shelf levels.<br>Strong steel frame.<br>Compact design.<br>Easy installation."
+          "content":"Durable steel frame construction.<br>Adjustable shelving system.<br>Rust resistant coating.<br>Long lasting durability."
         },
         {
           "title":"Dimensions",
-          "content":"Height: 180 cm<br>Width: 100 cm<br>Depth: 40 cm"
+          "content":"Height: 200 cm<br>Width: 100 cm<br>Depth: 40 cm"
         },
         {
           "title":"Applications",
-          "content":"Offices, libraries, document rooms, and record management systems."
+          "content":"Office document storage.<br>Libraries.<br>Corporate record rooms.<br>Government offices."
         }
       ]
     },
 
-
     {
       "slug":"file-rack",
       "name":"File Rack",
-      "description":"File Racks provide a convenient and organized way to store office documents and folders.",
+      "description":"The File Rack provides a structured storage system for organizing office files, folders, and documents.<br><br>Manufactured using high-quality steel and slotted angle frames, it ensures durability and stability for long-term use.<br><br>This rack helps offices maintain organized document storage while maximizing available workspace.",
 
       "images":[
         "../images/slotted-angle-rack/1.webp",
@@ -116,22 +107,288 @@
       "accordion":[
         {
           "title":"Product Description",
-          "content":"A simple yet effective rack solution for organizing office files and paperwork."
+          "content":"Designed for document organization, this file rack helps offices maintain a structured filing system and improve accessibility."
         },
         {
           "title":"Key Features",
-          "content":"Compact design.<br>Strong metal frame.<br>Adjustable shelves.<br>Easy maintenance."
+          "content":"Heavy-duty steel frame.<br>Adjustable shelf design.<br>Powder coated rust protection.<br>Easy installation."
         },
         {
           "title":"Dimensions",
-          "content":"Height: 180 cm<br>Width: 90 cm<br>Depth: 40 cm"
+          "content":"Height: 190 cm<br>Width: 90 cm<br>Depth: 40 cm"
         },
         {
           "title":"Applications",
-          "content":"Offices, file rooms, libraries, and record storage areas."
+          "content":"Office storage rooms.<br>Corporate filing systems.<br>Libraries.<br>Administrative departments."
+        }
+      ]
+    },
+
+    {
+      "slug":"multitier-storage-rack",
+      "name":"Multi-Tier Storage Rack",
+      "description":"The Multi-Tier Storage Rack is designed to maximize vertical storage capacity using multiple adjustable shelves.<br><br>Constructed from strong steel slotted angle frames, this rack provides reliable support for storing cartons, tools, and materials in offices and warehouses.",
+
+      "images":[
+        "../images/slotted-angle-rack/1.webp",
+        "../images/slotted-angle-rack/2.webp",
+        "../images/slotted-angle-rack/3.webp"
+      ],
+
+      "accordion":[
+        {
+          "title":"Product Description",
+          "content":"This rack provides multiple storage levels for efficient organization of goods and materials."
+        },
+        {
+          "title":"Key Features",
+          "content":"Multi-level shelving system.<br>Heavy-duty steel construction.<br>Adjustable shelves.<br>Durable frame structure."
+        },
+        {
+          "title":"Dimensions",
+          "content":"Height: 220 cm<br>Width: 120 cm<br>Depth: 50 cm"
+        },
+        {
+          "title":"Applications",
+          "content":"Warehouses.<br>Retail stores.<br>Offices.<br>Industrial storage areas."
+        }
+      ]
+    },
+
+    {
+      "slug":"pigeon-hole-rack",
+      "name":"Pigeon Hole Rack",
+      "description":"The Pigeon Hole Rack is a compartment-based storage rack designed for organizing documents, parcels, and small items efficiently.<br><br>Its multiple sections allow easy categorization and quick access to stored items.",
+
+      "images":[
+        "../images/slotted-angle-rack/1.webp",
+        "../images/slotted-angle-rack/2.webp",
+        "../images/slotted-angle-rack/3.webp"
+      ],
+
+      "accordion":[
+        {
+          "title":"Product Description",
+          "content":"This rack contains multiple compartments that help categorize and organize materials effectively."
+        },
+        {
+          "title":"Key Features",
+          "content":"Multiple storage compartments.<br>Strong steel structure.<br>Compact storage design.<br>Durable finish."
+        },
+        {
+          "title":"Dimensions",
+          "content":"Height: 180 cm<br>Width: 120 cm<br>Depth: 40 cm"
+        },
+        {
+          "title":"Applications",
+          "content":"Mailrooms.<br>Offices.<br>Schools.<br>Libraries."
+        }
+      ]
+    },
+
+    {
+      "slug":"heavy-duty-slotted-rack",
+      "name":"Heavy Duty Slotted Rack",
+      "description":"The Heavy Duty Slotted Rack is built for industrial storage environments that require strong load-bearing capacity.<br><br>Made from premium steel slotted angle frames, it supports heavy cartons, equipment, and warehouse materials.",
+
+      "images":[
+        "../images/slotted-angle-rack/1.webp",
+        "../images/slotted-angle-rack/2.webp",
+        "../images/slotted-angle-rack/3.webp"
+      ],
+
+      "accordion":[
+        {
+          "title":"Product Description",
+          "content":"This industrial rack provides strong and reliable storage for heavy materials and warehouse inventory."
+        },
+        {
+          "title":"Key Features",
+          "content":"Extra strong steel frame.<br>High load bearing capacity.<br>Adjustable shelving.<br>Durable powder coating."
+        },
+        {
+          "title":"Dimensions",
+          "content":"Height: 230 cm<br>Width: 150 cm<br>Depth: 60 cm"
+        },
+        {
+          "title":"Applications",
+          "content":"Warehouses.<br>Factories.<br>Industrial storage.<br>Manufacturing units."
+        }
+      ]
+    },
+
+    {
+      "slug":"angle-frame-rack",
+      "name":"Angle Frame Rack",
+      "description":"The Angle Frame Rack is a versatile storage solution made with slotted angle steel frames for strength and flexibility.<br><br>It provides an efficient shelving system for offices, warehouses, and commercial storage areas.",
+
+      "images":[
+        "../images/slotted-angle-rack/1.webp",
+        "../images/slotted-angle-rack/2.webp",
+        "../images/slotted-angle-rack/3.webp"
+      ],
+
+      "accordion":[
+        {
+          "title":"Product Description",
+          "content":"This rack is designed with strong angle frames that provide structural stability and adjustable storage flexibility."
+        },
+        {
+          "title":"Key Features",
+          "content":"Strong steel angle frame.<br>Adjustable shelving.<br>Rust resistant finish.<br>Easy installation."
+        },
+        {
+          "title":"Dimensions",
+          "content":"Height: 200 cm<br>Width: 120 cm<br>Depth: 50 cm"
+        },
+        {
+          "title":"Applications",
+          "content":"Offices.<br>Warehouses.<br>Retail stores.<br>Workshops."
+        }
+      ]
+    },
+
+    {
+      "slug":"ladder-rack",
+      "name":"Ladder Rack",
+      "description":"The Ladder Rack is designed for vertical storage of ladders, pipes, and long tools in industrial environments.<br><br>Its heavy-duty steel structure ensures safe storage while maximizing available floor space.",
+
+      "images":[
+        "../images/slotted-angle-rack/1.webp",
+        "../images/slotted-angle-rack/2.webp",
+        "../images/slotted-angle-rack/3.webp"
+      ],
+
+      "accordion":[
+        {
+          "title":"Product Description",
+          "content":"This rack provides a safe and organized storage system for ladders and long equipment."
+        },
+        {
+          "title":"Key Features",
+          "content":"Heavy-duty steel construction.<br>Vertical storage design.<br>Strong support frame.<br>Space saving structure."
+        },
+        {
+          "title":"Dimensions",
+          "content":"Height: 240 cm<br>Width: 120 cm<br>Depth: 60 cm"
+        },
+        {
+          "title":"Applications",
+          "content":"Warehouses.<br>Construction sites.<br>Workshops.<br>Maintenance rooms."
+        }
+      ]
+    },
+        {
+      "slug":"industrial-warehouse-rack",
+      "name":"Industrial Warehouse Rack",
+      "description":"The Industrial Warehouse Rack is a highly durable and efficient storage solution designed to handle heavy loads in warehouses, factories, and large storage facilities.<br><br>Built with a strong steel structure and precision-engineered slotted angle rack framework, this industrial rack provides maximum strength, stability, and long-lasting performance. It allows businesses to store cartons, machinery parts, tools, inventory, and bulk materials in an organized shelving rack system that optimizes warehouse space.<br><br>This heavy duty rack system is designed for easy assembly, adjustable shelves, and flexible configurations to suit different storage requirements. The robust steel rack construction ensures excellent load-bearing capacity while maintaining stability even in demanding industrial environments.<br><br>Whether used as a warehouse rack, industrial storage rack, or large-scale shelving rack, this system improves storage efficiency, accessibility, and organization, making it an ideal choice for modern warehouses and logistics operations.",
+      "images":[
+        "../images/slotted-angle-rack/1.webp",
+        "../images/slotted-angle-rack/2.webp",
+        "../images/slotted-angle-rack/3.webp"
+      ],
+      "accordion":[
+        {
+          "title":"Product Description",
+          "content":"The Industrial Warehouse Rack is designed for high-capacity storage in warehouses and industrial environments. Built using heavy-duty steel and a reinforced slotted angle rack frame, this storage rack offers exceptional durability and strength. The adjustable shelving rack system allows flexible storage for cartons, tools, and industrial materials. Its modular design ensures easy installation and efficient space management, making it a reliable warehouse rack solution for businesses that require organized and high-volume storage."
+        },
+        {
+          "title":"Key Features",
+          "content":"Heavy-duty steel rack construction for maximum durability<br>Adjustable shelving rack design for flexible storage<br>High load capacity industrial rack system<br>Rust-resistant finish for long-term performance<br>Easy assembly slotted angle rack structure"
+        },
+        {
+          "title":"Dimensions",
+          "content":"Height: 200 cm<br>Width: 120 cm<br>Depth: 45 cm"
+        },
+        {
+          "title":"Applications",
+          "content":"Warehouse inventory storage<br>Industrial parts and equipment storage<br>Bulk carton storage in warehouses<br>Logistics and distribution centers<br>Manufacturing unit storage"
+        }
+      ]
+    },
+    {
+      "slug":"factory-storage-rack",
+      "name":"Factory Storage Rack",
+      "description":"The Factory Storage Rack is a reliable and heavy-duty storage solution designed to keep factory floors organized, efficient, and clutter-free.<br><br>Manufactured using high-quality steel and a reinforced slotted angle rack structure, this industrial rack is built to withstand demanding factory environments. It is perfect for storing tools, raw materials, spare parts, equipment, and industrial supplies in a structured shelving rack system.<br><br>The modular design of this storage rack allows adjustable shelf levels, enabling businesses to customize the rack based on different storage needs. Its durable steel rack construction ensures excellent strength and long-lasting performance even under continuous industrial usage.<br><br>This heavy duty rack system helps maximize vertical storage space while improving accessibility and workflow efficiency inside factories. Whether used as a warehouse rack, industrial storage rack, or factory shelving rack, it provides a practical and scalable solution for modern manufacturing and production facilities.",
+      "images":[
+        "../images/slotted-angle-rack/1.webp",
+        "../images/slotted-angle-rack/2.webp",
+        "../images/slotted-angle-rack/3.webp"
+      ],
+      "accordion":[
+        {
+          "title":"Product Description",
+          "content":"The Factory Storage Rack is specifically designed to support industrial storage requirements in manufacturing facilities. Built with a strong slotted angle rack frame and premium steel rack components, it ensures durability and stability for heavy items. This shelving rack allows adjustable shelves for flexible storage of tools, machinery parts, and factory materials. Its sturdy industrial rack design improves factory organization, maximizes space utilization, and ensures easy access to stored inventory."
+        },
+        {
+          "title":"Key Features",
+          "content":"Robust steel rack construction for factory environments<br>Heavy duty industrial rack for storing machinery parts<br>Adjustable slotted angle rack shelves<br>High strength shelving rack for bulk materials<br>Space-saving vertical storage design"
+        },
+        {
+          "title":"Dimensions",
+          "content":"Height: 200 cm<br>Width: 120 cm<br>Depth: 45 cm"
+        },
+        {
+          "title":"Applications",
+          "content":"Factory raw material storage<br>Tool and equipment organization<br>Industrial parts storage<br>Manufacturing unit storage systems<br>Workshop and production area storage"
+        }
+      ]
+    },
+    {
+      "slug":"bulk-storage-rack",
+      "name":"Bulk Storage Rack",
+      "description":"The Bulk Storage Rack is designed for businesses that require efficient storage for large quantities of goods and materials.<br><br>Constructed using a durable steel rack framework and reinforced slotted angle rack design, this industrial storage rack offers excellent load-bearing capacity and long-term durability. It allows warehouses, factories, and distribution centers to organize bulk inventory in a structured shelving rack system that improves accessibility and space management.<br><br>The adjustable shelf configuration provides flexibility to store cartons, packaged goods, raw materials, and inventory items of varying sizes. Its heavy duty rack structure ensures stability even under continuous industrial usage.<br><br>This warehouse rack solution helps businesses optimize storage space, reduce clutter, and improve operational efficiency. Whether used in warehouses, logistics centers, or retail storage areas, the Bulk Storage Rack provides a reliable and scalable storage rack solution for large-volume inventory management.",
+      "images":[
+        "../images/slotted-angle-rack/1.webp",
+        "../images/slotted-angle-rack/2.webp",
+        "../images/slotted-angle-rack/3.webp"
+      ],
+      "accordion":[
+        {
+          "title":"Product Description",
+          "content":"The Bulk Storage Rack is built for high-volume storage applications where durability and strength are essential. Made with premium steel rack materials and a sturdy slotted angle rack frame, this shelving rack ensures long-lasting performance. It allows businesses to store bulk goods, cartons, and inventory efficiently while maintaining easy accessibility. The industrial rack design supports heavy loads and helps optimize warehouse space through vertical storage organization."
+        },
+        {
+          "title":"Key Features",
+          "content":"Heavy duty steel rack for bulk storage<br>Adjustable shelving rack for flexible inventory storage<br>Strong slotted angle rack structure<br>Ideal warehouse rack for large inventory volumes<br>Durable industrial rack for long-term use"
+        },
+        {
+          "title":"Dimensions",
+          "content":"Height: 200 cm<br>Width: 120 cm<br>Depth: 45 cm"
+        },
+        {
+          "title":"Applications",
+          "content":"Bulk warehouse storage<br>Logistics inventory storage<br>Retail stock storage<br>Industrial material storage<br>Distribution center shelving systems"
+        }
+      ]
+    },
+    {
+      "slug":"heavy-industrial-rack",
+      "name":"Heavy Industrial Rack",
+      "description":"The Heavy Industrial Rack is engineered to provide maximum strength and durability for demanding industrial storage requirements.<br><br>Manufactured using premium-grade steel and a reinforced slotted angle rack structure, this storage rack is capable of supporting heavy loads while maintaining stability and safety. It is ideal for storing machinery parts, industrial tools, large cartons, and heavy equipment in warehouses and production facilities.<br><br>The adjustable shelving rack design allows businesses to modify shelf heights based on their storage needs, making it a versatile industrial rack system for different applications. Its robust steel rack construction ensures long-term performance even in harsh industrial environments.<br><br>This heavy duty rack solution helps optimize vertical storage space, improve organization, and enhance operational efficiency. Whether used as a warehouse rack, factory storage rack, or industrial shelving rack, it delivers reliable performance for high-capacity storage operations.",
+      "images":[
+        "../images/slotted-angle-rack/1.webp",
+        "../images/slotted-angle-rack/2.webp",
+        "../images/slotted-angle-rack/3.webp"
+      ],
+      "accordion":[
+        {
+          "title":"Product Description",
+          "content":"The Heavy Industrial Rack is designed for storing heavy materials and equipment in demanding industrial environments. Built with a durable steel rack frame and reinforced slotted angle rack structure, it provides superior load-bearing capacity and stability. The adjustable shelving rack system allows flexible storage arrangements for different inventory sizes. This industrial rack improves warehouse organization, supports heavy loads, and ensures efficient space utilization in factories and warehouses."
+        },
+        {
+          "title":"Key Features",
+          "content":"Extra strong heavy duty rack construction<br>Premium steel rack for industrial strength<br>Adjustable shelving rack for flexible storage<br>Stable slotted angle rack frame design<br>High load capacity warehouse rack"
+        },
+        {
+          "title":"Dimensions",
+          "content":"Height: 200 cm<br>Width: 120 cm<br>Depth: 45 cm"
+        },
+        {
+          "title":"Applications",
+          "content":"Heavy machinery parts storage<br>Industrial warehouse storage<br>Factory equipment storage<br>Large inventory storage<br>Manufacturing unit storage systems"
         }
       ]
     }
-
   ]
 }
