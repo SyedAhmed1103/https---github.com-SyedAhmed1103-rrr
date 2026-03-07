@@ -2720,264 +2720,582 @@
 
 
 
-    <!-- Page Header Section Start -->
-    <div class="page-header parallaxie">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- Page Header Box Start -->
-                    <div class="page-header-box">
-                        <h1 class="text-anime-style-3" data-cursor="-opaque">Slotted Angle Rack</h1>
-                        <nav class="wow fadeInUp">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="../index.html">home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Slotted Angle Rack</li>
-                            </ol>
-                        </nav>
-                    </div>
-                    <!-- Page Header Box End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Page Header Section End -->
+<style>
 
-    <!-- Scrolling Ticker Section Start -->
-    <div class="our-scrolling-ticker">
-        <!-- Scrolling Ticker Box Start -->
-        <div class="scrolling-ticker-box">
-            <!-- Scrolling Content Start -->
-            <div class="scrolling-content">
-                <span><img src="../images/icon-asterisk-white.svg" alt="">Office Rack</span>
-                <span><img src="../images/icon-asterisk-white.svg" alt="">Warehouse Rack</span>
-                <span><img src="../images/icon-asterisk-white.svg" alt="">File Storage Rack</span>
-                <span><img src="../images/icon-asterisk-white.svg" alt="">File Rack</span>
-                <span><img src="../images/icon-asterisk-white.svg" alt="">Multi-Tier Storage Rack</span>
-                <span><img src="../images/icon-asterisk-white.svg" alt="">Pigeon Hole Rack</span>
-                <span><img src="../images/icon-asterisk-white.svg" alt="">Heavy Duty Slotted Rack</span>
-                <span><img src="../images/icon-asterisk-white.svg" alt="">Angle Frame Rack</span>
-                <span><img src="../images/icon-asterisk-white.svg" alt="">Ladder Rack</span>
-            </div>
-            <!-- Scrolling Content End -->
+.product-container{
+max-width:1200px;
+margin:auto;
+padding:40px 20px;
+font-family:serif;
+}
 
-            <!-- Scrolling Content Start -->
-            <div class="scrolling-content">
-                <span><img src="../images/icon-asterisk-white.svg" alt="">Office Rack</span>
-                <span><img src="../images/icon-asterisk-white.svg" alt="">Warehouse Rack</span>
-                <span><img src="../images/icon-asterisk-white.svg" alt="">File Storage Rack</span>
-                <span><img src="../images/icon-asterisk-white.svg" alt="">File Rack</span>
-                <span><img src="../images/icon-asterisk-white.svg" alt="">Multi-Tier Storage Rack</span>
-                <span><img src="../images/icon-asterisk-white.svg" alt="">Pigeon Hole Rack</span>
-                <span><img src="../images/icon-asterisk-white.svg" alt="">Heavy Duty Slotted Rack</span>
-                <span><img src="../images/icon-asterisk-white.svg" alt="">Angle Frame Rack</span>
-                <span><img src="../images/icon-asterisk-white.svg" alt="">Ladder Rack</span>
-            </div>
-            <!-- Scrolling Content End -->
-        </div>
-        <!-- Scrolling Ticker Box End -->
-    </div>
-    <!-- Scrolling Ticker Section End -->
-     <div class="row section-row" style="margin-top: 30px;">
-                <div class="col-lg-12">
-                    <!-- Section Title Start -->
-                    <div class="section-title section-title-center">
-                        <p class="text-anime-style-3" data-cursor="-opaque">Our Display Racks are designed to showcase products in a smart, organized, and visually appealing way. We offer customized retail display solutions including wall-mounted racks, gondola shelving, island displays, and promotional stands that enhance product visibility and improve customer engagement. Built with high-quality materials, our display systems ensure durability, space efficiency, and a professional look for supermarkets, retail stores, and commercial spaces.</p>
+.product-gallery{
+position:relative;
+overflow:hidden;
+}
 
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-            </div>
-    <!-- Photo Gallery Start -->
-    <div class="page-gallery">
-        <div class="container">
-        <div class="row gallery-items page-gallery-box">
+.product-slider{
+display:flex;
+transition:transform .4s ease;
+}
 
-    <!-- 1 -->
-    <div class="col-12 col-md-6 col-lg-4">
-        <div class="gallery-card wow fadeInUp">
-            <div class="photo-gallery">
-                <a href="../images/slotted-angle-rack/1.webp">
-                    <figure class="image-anime">
-                        <img src="../images/slotted-angle-rack/1.webp" alt="">
-                    </figure>
-                </a>
-            </div>
-     
-            <div class="gallery-info">
-                <h5>Office Rack</h5>
-                <div class="gallery-buttons">
-                    <button class="btn call-btn" onclick="callNow()">Call Now</button>
-                    <button class="btn quote-btn" onclick="goToContact()">Get a Quote</button>
-                </div>
-            </div>
-        </div>
-    </div>
+.product-slider img{
+width:100%;
+object-fit: contain;
+flex-shrink:0;
+user-select:none;
+border-radius: 30px;
+padding-top: 50px;
+}
+
+@media(min-width:1000px){
+.product-slider img{
+
+height: 80vh;
+
+}
+}
+
+.slider-arrow{
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+background:#000;
+color:#fff;
+border:none;
+padding:10px 15px;
+cursor:pointer;
+z-index:5;
+}
+
+.prev{ left:10px; }
+.next{ right:10px; }
+
+.slider-dots{
+text-align:center;
+margin-top:12px;
+}
+
+.slider-dots span{
+display:inline-block;
+width:10px;
+height:10px;
+background:#ccc;
+border-radius:50%;
+margin:5px;
+cursor:pointer;
+}
+
+.slider-dots span.active{
+background:#000;
+}
+
+.product-title{
+font-size:30px;
+margin-top:25px;
+}
+
+.product-description{
+margin-top:10px;
+font-size:16px;
+color:#444;
+line-height:1.6;
+}
+
+.accordion{
+margin-top:25px;
+}
+
+.accordion-item{
+border:1px solid #000;
+padding: 10px;
+
+}
+
+.accordion-header{
+display:flex;
+justify-content:space-between;
+padding:16px 0;
+cursor:pointer;
+font-size:22px;
+}
+
+.accordion-content{
+display:none;
+padding-bottom:15px;
+}
+
+.accordion-content.active{
+display:block;
+}
+
+@media(max-width:768px){
+
+.product-title{
+font-size:22px;
+}
+
+}
+
+</style>
 
 
-    <!-- 2 -->
-    <div class="col-12 col-md-6 col-lg-4">
-        <div class="gallery-card wow fadeInUp" data-wow-delay="0.2s">
-            <div class="photo-gallery">
-                <a href="../images/slotted-angle-rack/2.webp">
-                    <figure class="image-anime">
-                        <img src="../images/slotted-angle-rack/2.webp" alt="">
-                    </figure>
-                </a>
-            </div>
-            <div class="gallery-info">
-                <h5>Warehouse Rack</h5>
-                <div class="gallery-buttons">
-                    <button class="btn call-btn" onclick="callNow()">Call Now</button>
-                    <button class="btn quote-btn" onclick="goToContact()">Get a Quote</button>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="product-container">
 
-    <!-- 3 -->
-    <div class="col-12 col-md-6 col-lg-4">
-        <div class="gallery-card wow fadeInUp" data-wow-delay="0.4s">
-            <div class="photo-gallery">
-                <a href="../images/slotted-angle-rack/3.webp">
-                    <figure class="image-anime">
-                        <img src="../images/slotted-angle-rack/3.webp" alt="">
-                    </figure>
-                </a>
-            </div>
-            <div class="gallery-info">
-                <h5>File Storage Rack</h5>
-                <div class="gallery-buttons">
-                    <button class="btn call-btn" onclick="callNow()">Call Now</button>
-                    <button class="btn quote-btn" onclick="goToContact()">Get a Quote</button>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="product-gallery">
 
-    <!-- 4 -->
-    <div class="col-12 col-md-6 col-lg-4">
-        <div class="gallery-card wow fadeInUp" data-wow-delay="0.6s">
-            <div class="photo-gallery">
-                <a href="../images/slotted-angle-rack/4.webp">
-                    <figure class="image-anime">
-                        <img src="../images/slotted-angle-rack/4.webp" alt="">
-                    </figure>
-                </a>
-            </div>
-            <div class="gallery-info">
-                <h5>File Rack</h5>
-                <div class="gallery-buttons">
-                    <button class="btn call-btn" onclick="callNow()">Call Now</button>
-                    <button class="btn quote-btn" onclick="goToContact()">Get a Quote</button>
-                </div>
-            </div>
-        </div>
-    </div>
+<button class="slider-arrow prev">‹</button>
+<button class="slider-arrow next">›</button>
 
-    <!-- 5 -->
-    <div class="col-12 col-md-6 col-lg-4">
-        <div class="gallery-card wow fadeInUp" data-wow-delay="0.8s">
-            <div class="photo-gallery">
-                <a href="../images/slotted-angle-rack/5.webp">
-                    <figure class="image-anime">
-                        <img src="../images/slotted-angle-rack/5.webp" alt="">
-                    </figure>
-                </a>
-            </div>
-            <div class="gallery-info">
-                <h5>Multi-Tier Storage Rack</h5>
-                <div class="gallery-buttons">
-                    <button class="btn call-btn" onclick="callNow()">Call Now</button>
-                    <button class="btn quote-btn" onclick="goToContact()">Get a Quote</button>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="product-slider" id="slider"></div>
 
-    <!-- 6 -->
-    <div class="col-12 col-md-6 col-lg-4">
-        <div class="gallery-card wow fadeInUp" data-wow-delay="1s">
-            <div class="photo-gallery">
-                <a href="../images/slotted-angle-rack/6.webp">
-                    <figure class="image-anime">
-                        <img src="../images/slotted-angle-rack/6.webp" alt="">
-                    </figure>
-                </a>
-            </div>
-            <div class="gallery-info">
-                <h5>Pigeon Hole Rack</h5>
-                <div class="gallery-buttons">
-                    <button class="btn call-btn" onclick="callNow()">Call Now</button>
-                    <button class="btn quote-btn" onclick="goToContact()">Get a Quote</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 7 -->
-    <div class="col-12 col-md-6 col-lg-4">
-        <div class="gallery-card wow fadeInUp" data-wow-delay="1.2s">
-            <div class="photo-gallery">
-                <a href="../images/slotted-angle-rack/7.webp">
-                    <figure class="image-anime">
-                        <img src="../images/slotted-angle-rack/7.webp" alt="">
-                    </figure>
-                </a>
-            </div>
-            <div class="gallery-info">
-                <h5>Heavy Duty Slotted Rack</h5>
-                <div class="gallery-buttons">
-                    <button class="btn call-btn" onclick="callNow()">Call Now</button>
-                    <button class="btn quote-btn" onclick="goToContact()">Get a Quote</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 8 -->
-    <div class="col-12 col-md-6 col-lg-4">
-        <div class="gallery-card wow fadeInUp" data-wow-delay="1.4s">
-            <div class="photo-gallery">
-                <a href="../images/slotted-angle-rack/8.webp">
-                    <figure class="image-anime">
-                        <img src="../images/slotted-angle-rack/8.webp" alt="">
-                    </figure>
-                </a>
-            </div>
-            <div class="gallery-info">
-                <h5>Angle Frame Rack</h5>
-                <div class="gallery-buttons">
-                    <button class="btn call-btn" onclick="callNow()">Call Now</button>
-                    <button class="btn quote-btn" onclick="goToContact()">Get a Quote</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 9 -->
-    <div class="col-12 col-md-6 col-lg-4">
-        <div class="gallery-card wow fadeInUp" data-wow-delay="1.6s">
-            <div class="photo-gallery">
-                <a href="../images/slotted-angle-rack/9.webp">
-                    <figure class="image-anime">
-                        <img src="../images/slotted-angle-rack/9.webp" alt="">
-                    </figure>
-                </a>
-            </div>
-            <div class="gallery-info">
-                <h5>Ladder Rack</h5>
-                <div class="gallery-buttons">
-                    <button class="btn call-btn" onclick="callNow()">Call Now</button>
-                    <button class="btn quote-btn" onclick="goToContact()">Get a Quote</button>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="slider-dots" id="dots"></div>
 
 </div>
-        </div>
-    </div>
-    <!-- Photo Gallery End -->
+
+
+<h1 class="product-title" id="product-title"></h1>
+
+<div class="product-description" id="product-description"></div>
+
+
+
+<style>
+.contact-box{
+border:1px solid #000;
+
+font-family:Arial, sans-serif;
+background:#f9f9f9;
+margin-top: 30px;
+border-radius: 5px;
+}
+
+.contact-item2{
+display:flex;
+align-items:center;
+font-size:18px;
+margin-bottom: 0px;
+
+}
+
+.contact-item2 + .contact-item2{
+border-top:1px solid #000;
+}
+
+.contact-icon{
+font-size:24px;
+text-align:center;
+}
+
+.contact-item2 a{
+color:#000;
+text-decoration:underline;
+}
+
+@media(max-width:600px){
+
+.contact-item2{
+font-size:16px;
+}
+
+.contact-icon{
+font-size:20px;
+margin-right: 0px;
+}
+
+}
+</style>
+
+
+<div class="contact-box">
+
+<div class="contact-item2">
+<div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+<div>
+Call us:
+<a href="tel:+919920947358">+91 9920947358</a>
+</div>
+</div>
+
+<div class="contact-item2">
+<div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+<div>
+Email us:
+<a href="mailto:sales@saifandbrothers.com">sales@saifandbrothers.com</a>
+</div>
+</div>
+
+</div>
+
+<div class="accordion" id="accordion"></div>
+
+<br>
+     <div class="contact-us-form">
+            <!-- Section Title Start -->
+            <div class="section-title">
+              <h3 class="wow fadeInUp iconsvg">Get In Touch</h3>
+              <h2 class="text-anime-style-3" data-cursor="-opaque">Send Us A Message</h2>
+              <p class="wow fadeInUp" data-wow-delay="0.2s">Have a question or project idea? We’d love to
+                hear from you. Let’s discuss your design needs.</p>
+            </div>
+            <!-- Section Title End -->
+
+            <!-- Contact Form Start -->
+            <div class="contact-form">
+              <form id="customForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp"
+                data-wow-delay="0.4s">
+                <div class="row">
+                  <div class="form-group col-md-6 mb-4">
+                    <label class="form-label">First Name *</label>
+                    <input type="text" name="fname" class="form-control" id="fname" placeholder="Enter Your First Name"
+                      required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+
+                  <div class="form-group col-md-6 mb-4">
+                    <label class="form-label">Last Name *</label>
+                    <input type="text" name="lname" class="form-control" id="lname" placeholder="Enter Your Last Name"
+                      required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+
+                  <div class="form-group col-md-6 mb-4">
+                    <label class="form-label">Phone Number *</label>
+                    <input type="text" name="phone" class="form-control" id="phone"
+                      placeholder="Enter Your Phone Number" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+
+                  <div class="form-group col-md-6 mb-4">
+                    <label class="form-label">Email Address *</label>
+                    <input type="email" name="email" class="form-control" id="email"
+                      placeholder="Enter Your Email Address" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+
+                  <div class="form-group col-md-12 mb-5">
+                    <label class="form-label">Message</label>
+                    <textarea name="message" class="form-control" id="message" rows="10"
+                      placeholder="Any Additional Message...."></textarea>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <input type="hidden" name="product_name" id="product_name">
+
+                  <div class="col-lg-12">
+               <div class="contact-form-btn">
+  <button type="submit" class="btn-default" id="submitBtn">
+    <span id="btnText">Submit Message</span>
+    <span id="btnLoader" style="display:none;">
+      <i class="fa fa-spinner fa-spin"></i> Submitting...
+    </span>
+  </button>
+  <div id="msgSubmit" class="h3 hidden"></div>
+</div>
+                  </div>
+                </div>
+              </form>
+              <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const form = document.getElementById("customForm");
+  const submitBtn = document.querySelector("#customForm button[type='submit']");
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const fname = document.getElementById("fname").value.trim();
+    const lname = document.getElementById("lname").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const email = document.getElementById("email").value.trim();
+
+    // 🔹 Required Validation
+    if (!fname || !lname || !phone || !email) {
+      showToast("Please fill all required fields ❌", "error");
+      return;
+    }
+
+    // 🔹 Email Validation
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+    if (!emailPattern.test(email)) {
+      showToast("Please enter a valid email address ❌", "error");
+      return;
+    }
+
+    // 🔹 Phone Validation (10 digit only)
+    const phonePattern = /^[0-9]{10}$/;
+    if (!phonePattern.test(phone)) {
+      showToast("Please enter a valid 10-digit phone number ❌", "error");
+      return;
+    }
+
+    // 🔹 Disable Button + Loading State
+    submitBtn.disabled = true;
+    const originalText = submitBtn.innerHTML;
+    submitBtn.innerHTML = "Submitting...";
+    submitBtn.style.opacity = "0.7";
+    submitBtn.style.cursor = "not-allowed";
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("send_inquiry.php", {
+        method: "POST",
+        body: formData
+      });
+
+      const result = await response.json();
+
+      if (result.status === "success") {
+        showToast(result.message, "success");
+        form.reset();
+      } else {
+        showToast(result.message || "Something went wrong ❌", "error");
+      }
+
+    } catch (error) {
+      showToast("Server error. Please try again later ❌", "error");
+    }
+
+    // 🔹 Enable Button Again
+    submitBtn.disabled = false;
+    submitBtn.innerHTML = originalText;
+    submitBtn.style.opacity = "1";
+    submitBtn.style.cursor = "pointer";
+  });
+
+  // 🔹 Toast Function
+  function showToast(message, type) {
+    const toast = document.createElement("div");
+    toast.innerText = message;
+    toast.style.position = "fixed";
+    toast.style.top = "20px";
+    toast.style.right = "20px";
+    toast.style.padding = "12px 20px";
+    toast.style.color = "#fff";
+    toast.style.borderRadius = "5px";
+    toast.style.zIndex = "9999";
+    toast.style.fontSize = "14px";
+    toast.style.boxShadow = "0 5px 15px rgba(0,0,0,0.2)";
+    toast.style.backgroundColor = type === "success" ? "#28a745" : "#dc3545";
+    toast.style.transition = "0.3s ease";
+    document.body.appendChild(toast);
+
+    setTimeout(() => {
+      toast.remove();
+    }, 3000);
+  }
+
+});
+</script>
+            </div>
+            <!-- Contact Form End -->
+          </div>
+
+</div>
+
+
+
+
+
+<script>
+
+/* GET PRODUCT FROM URL */
+
+const params = new URLSearchParams(window.location.search);
+const slug = params.get("product");
+
+
+fetch("/products.json")
+.then(res => res.json())
+.then(data => {
+
+let product = data.products.find(p => p.slug === slug);
+
+if(!product){
+document.querySelector(".product-container").innerHTML="Product not found";
+return;
+}
+
+
+/* TITLE + DESCRIPTION */
+
+document.getElementById("product-title").innerText = product.name;
+document.getElementById("product-description").innerHTML = product.description;
+document.getElementById("product_name").value = product.name;
+
+
+/* IMAGES */
+
+let slider = document.getElementById("slider");
+
+product.images.forEach(img => {
+
+slider.innerHTML += `<img src="${img}">`;
+
+});
+
+
+/* ACCORDION */
+
+let accordion = document.getElementById("accordion");
+
+product.accordion.forEach(item => {
+
+accordion.innerHTML += `
+
+<div class="accordion-item">
+
+<div class="accordion-header">
+${item.title}
+<span>+</span>
+</div>
+
+<div class="accordion-content">
+${item.content}
+</div>
+
+</div>
+
+`;
+
+});
+
+
+initSlider();
+initAccordion();
+
+});
+
+
+
+/* SLIDER */
+
+function initSlider(){
+
+let slider=document.getElementById("slider");
+let slides=slider.children;
+let index=0;
+
+let dotsContainer=document.getElementById("dots");
+
+for(let i=0;i<slides.length;i++){
+
+let dot=document.createElement("span");
+
+if(i==0) dot.classList.add("active");
+
+dot.onclick=()=>{ index=i; updateSlider(); }
+
+dotsContainer.appendChild(dot);
+
+}
+
+function updateSlider(){
+
+slider.style.transform="translateX(-"+index*100+"%)";
+
+let dots=dotsContainer.children;
+
+for(let d of dots) d.classList.remove("active");
+
+dots[index].classList.add("active");
+
+}
+
+document.querySelector(".next").onclick=()=>{
+
+index=(index+1)%slides.length;
+
+updateSlider();
+
+}
+
+document.querySelector(".prev").onclick=()=>{
+
+index=(index-1+slides.length)%slides.length;
+
+updateSlider();
+
+}
+
+
+/* MOBILE SWIPE */
+
+let startX=0;
+
+slider.addEventListener("touchstart",(e)=>{
+startX=e.touches[0].clientX;
+});
+
+slider.addEventListener("touchend",(e)=>{
+
+let endX=e.changedTouches[0].clientX;
+
+if(startX-endX>50){
+index=(index+1)%slides.length;
+}
+
+if(endX-startX>50){
+index=(index-1+slides.length)%slides.length;
+}
+
+updateSlider();
+
+});
+
+
+/* DESKTOP DRAG */
+
+let isDown=false;
+
+slider.addEventListener("mousedown",(e)=>{
+isDown=true;
+startX=e.clientX;
+});
+
+slider.addEventListener("mouseup",(e)=>{
+
+if(!isDown) return;
+
+isDown=false;
+
+let endX=e.clientX;
+
+if(startX-endX>50){
+index=(index+1)%slides.length;
+}
+
+if(endX-startX>50){
+index=(index-1+slides.length)%slides.length;
+}
+
+updateSlider();
+
+});
+
+}
+
+
+
+/* ACCORDION */
+
+function initAccordion(){
+
+document.querySelectorAll(".accordion-header").forEach(h=>{
+
+h.onclick=function(){
+
+let content=this.nextElementSibling;
+
+content.classList.toggle("active");
+
+}
+
+});
+
+}
+
+</script>
 
     <!-- Main Footer Start -->
       <div class="main-footer-metal bg-section dark-section">
@@ -3205,55 +3523,36 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     </script>
 
-<script>
-
+    <script>
 document.querySelectorAll('.gallery-card').forEach(function(card){
 
+    // image gallery link disable
     let link = card.querySelector('.photo-gallery a');
-    let img = card.querySelector('.photo-gallery img');
-
-    let title = card.querySelector("h5").innerText;
-
-    let slug = title
-        .toLowerCase()
-        .replace(/[^a-z0-9\s]/g, '')
-        .trim()
-        .replace(/\s+/g, '-');
-
-    let url = "../detail.html?product=" + slug;
-
-    /* STEP 1: disable gallery/lightbox */
-
     if(link){
         link.removeAttribute("href");
-        link.style.pointerEvents = "none";
     }
-
-    /* STEP 2: make image clickable */
-
-    if(img){
-        img.style.cursor = "pointer";
-
-        img.addEventListener("click", function(e){
-            e.preventDefault();
-            e.stopPropagation();
-            window.location.href = url;
-        });
-    }
-
-    /* STEP 3: card click */
 
     card.addEventListener("click", function(e){
 
+        // buttons pe click ho to redirect na ho
         if(e.target.closest('.gallery-buttons')) return;
 
-        window.location.href = url;
+        let title = this.querySelector("h5").innerText;
+
+        // slug generate
+        let slug = title
+            .toLowerCase()
+            .replace(/[^a-z0-9\s]/g, '')
+            .trim()
+            .replace(/\s+/g, '-');
+
+        window.location.href = slug + ".html";
 
     });
 
 });
-
 </script>
+
     <script src="../js/jquery-3.7.1.min.js"></script>
 
     <!-- Bootstrap -->
