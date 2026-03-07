@@ -3117,7 +3117,56 @@ document.addEventListener("DOMContentLoaded", function () {
 			window.location.href = "../contact.html";
 		}
 	</script>
-	<script src="../js/jquery-3.7.1.min.js"></script>
+	<script>
+
+document.querySelectorAll('.gallery-card').forEach(function(card){
+
+    let link = card.querySelector('.photo-gallery a');
+    let img = card.querySelector('.photo-gallery img');
+
+    let title = card.querySelector("h5").innerText;
+
+    let slug = title
+        .toLowerCase()
+        .replace(/[^a-z0-9\s]/g, '')
+        .trim()
+        .replace(/\s+/g, '-');
+
+    let url = "../detail.html?product=" + slug;
+
+    /* STEP 1: disable gallery/lightbox */
+
+    if(link){
+        link.removeAttribute("href");
+        link.style.pointerEvents = "none";
+    }
+
+    /* STEP 2: make image clickable */
+
+    if(img){
+        img.style.cursor = "pointer";
+
+        img.addEventListener("click", function(e){
+            e.preventDefault();
+            e.stopPropagation();
+            window.location.href = url;
+        });
+    }
+
+    /* STEP 3: card click */
+
+    card.addEventListener("click", function(e){
+
+        if(e.target.closest('.gallery-buttons')) return;
+
+        window.location.href = url;
+
+    });
+
+});
+
+</script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
 
 	<!-- Bootstrap -->
 	<script src="../js/bootstrap.min.js"></script>
