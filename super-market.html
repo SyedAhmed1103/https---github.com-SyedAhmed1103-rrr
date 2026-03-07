@@ -2851,220 +2851,220 @@
 
         <!-- Main Footer Start -->
                 <!-- Main Footer Start -->
-        <div class="main-footer-metal bg-section dark-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <!-- Footer Header Start -->
-                         <div class="footer-header-metal">
+    <div class="main-footer-metal bg-section dark-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Footer Header Start -->
+                    <div class="footer-header-metal">
                         <!-- Section Title Start -->
-                <div class="row align-items-center col-12">
+                        <div class="row align-items-center col-12">
 
-    <!-- Title Section -->
-    <div class="section-title col-12 col-md-12 col-lg-8">
-        <h2 class="text-anime-style-3" data-cursor="-opaque">
-            Subscribe To Our Newsletter
-        </h2>
-    </div>
+                            <!-- Title Section -->
+                            <div class="section-title col-12 col-md-12 col-lg-8">
+                                <h2 class="text-anime-style-3" data-cursor="-opaque">
+                                    Subscribe To Our Newsletter
+                                </h2>
+                            </div>
 
-    <!-- Newsletter Form -->
-    <div class="footer-social-links-metal col-12 col-md-12 col-lg-4">
-        <div class="footer-newsletter-form-elite">
-            <form id="newslettersForm" action="#" method="POST">
-    <div class="form-group d-flex">
-        <input type="email" name="mail" id="newsletterEmail" class="form-control"
-            placeholder="Email Address" required>
-        <button type="submit" class="newsletter-btn ms-2" id="newsletterBtn">
-            <span id="newsBtnText">
-                <i class="fa-regular fa-paper-plane"></i>
-            </span>
-            <span id="newsBtnLoader" style="display:none;">
-                <i class="fa fa-spinner fa-spin"></i>
-            </span>
-        </button>
-    </div>
-</form>
-            <script>
-document.addEventListener("DOMContentLoaded", function () {
+                            <!-- Newsletter Form -->
+                            <div class="footer-social-links-metal col-12 col-md-12 col-lg-4">
+                                <div class="footer-newsletter-form-elite">
+                                    <form id="newslettersForm" action="#" method="POST">
+                                        <div class="form-group d-flex">
+                                            <input type="email" name="mail" id="newsletterEmail" class="form-control"
+                                                placeholder="Email Address" required>
+                                            <button type="submit" class="newsletter-btn ms-2" id="newsletterBtn">
+                                                <span id="newsBtnText">
+                                                    <i class="fa-regular fa-paper-plane"></i>
+                                                </span>
+                                                <span id="newsBtnLoader" style="display:none;">
+                                                    <i class="fa fa-spinner fa-spin"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </form>
+                                    <script>
+                                        document.addEventListener("DOMContentLoaded", function () {
 
-  const form = document.getElementById("newslettersForm");
-  const btn = document.getElementById("newsletterBtn");
-  const btnText = document.getElementById("newsBtnText");
-  const btnLoader = document.getElementById("newsBtnLoader");
+                                            const form = document.getElementById("newslettersForm");
+                                            const btn = document.getElementById("newsletterBtn");
+                                            const btnText = document.getElementById("newsBtnText");
+                                            const btnLoader = document.getElementById("newsBtnLoader");
 
-  form.addEventListener("submit", async function (e) {
-    e.preventDefault();
+                                            form.addEventListener("submit", async function (e) {
+                                                e.preventDefault();
 
-    const email = document.getElementById("newsletterEmail").value.trim();
+                                                const email = document.getElementById("newsletterEmail").value.trim();
 
-    if (!email) {
-      showToast("Please enter your email ❌", "error");
-      return;
-    }
+                                                if (!email) {
+                                                    showToast("Please enter your email ❌", "error");
+                                                    return;
+                                                }
 
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-    if (!emailPattern.test(email)) {
-      showToast("Invalid email address ❌", "error");
-      return;
-    }
+                                                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+                                                if (!emailPattern.test(email)) {
+                                                    showToast("Invalid email address ❌", "error");
+                                                    return;
+                                                }
 
-    btn.disabled = true;
-    btnText.style.display = "none";
-    btnLoader.style.display = "inline-block";
+                                                btn.disabled = true;
+                                                btnText.style.display = "none";
+                                                btnLoader.style.display = "inline-block";
 
-    const formData = new FormData(form);
+                                                const formData = new FormData(form);
 
-    try {
-      const response = await fetch("send_newsletter.php", {
-        method: "POST",
-        body: formData
-      });
+                                                try {
+                                                    const response = await fetch("send_newsletter.php", {
+                                                        method: "POST",
+                                                        body: formData
+                                                    });
 
-      const result = await response.json();
+                                                    const result = await response.json();
 
-      if (result.status === "success") {
-        showToast(result.message, "success");
-        form.reset();
-      } else {
-        showToast(result.message || "Something went wrong ❌", "error");
-      }
+                                                    if (result.status === "success") {
+                                                        showToast(result.message, "success");
+                                                        form.reset();
+                                                    } else {
+                                                        showToast(result.message || "Something went wrong ❌", "error");
+                                                    }
 
-    } catch (error) {
-      showToast("Server error. Try again later ❌", "error");
-    }
+                                                } catch (error) {
+                                                    showToast("Server error. Try again later ❌", "error");
+                                                }
 
-    btn.disabled = false;
-    btnText.style.display = "inline-block";
-    btnLoader.style.display = "none";
-  });
+                                                btn.disabled = false;
+                                                btnText.style.display = "inline-block";
+                                                btnLoader.style.display = "none";
+                                            });
 
-  function showToast(message, type) {
-    const toast = document.createElement("div");
-    toast.innerText = message;
-    toast.style.position = "fixed";
-    toast.style.top = "20px";
-    toast.style.right = "20px";
-    toast.style.padding = "12px 20px";
-    toast.style.color = "#fff";
-    toast.style.borderRadius = "5px";
-    toast.style.zIndex = "9999";
-    toast.style.fontSize = "14px";
-    toast.style.backgroundColor = type === "success" ? "#28a745" : "#dc3545";
-    document.body.appendChild(toast);
+                                            function showToast(message, type) {
+                                                const toast = document.createElement("div");
+                                                toast.innerText = message;
+                                                toast.style.position = "fixed";
+                                                toast.style.top = "20px";
+                                                toast.style.right = "20px";
+                                                toast.style.padding = "12px 20px";
+                                                toast.style.color = "#fff";
+                                                toast.style.borderRadius = "5px";
+                                                toast.style.zIndex = "9999";
+                                                toast.style.fontSize = "14px";
+                                                toast.style.backgroundColor = type === "success" ? "#28a745" : "#dc3545";
+                                                document.body.appendChild(toast);
 
-    setTimeout(() => toast.remove(), 3000);
-  }
+                                                setTimeout(() => toast.remove(), 3000);
+                                            }
 
-});
-</script>
-        </div>
-    </div>
+                                        });
+                                    </script>
+                                </div>
+                            </div>
 
-</div>
+                        </div>
                         <!-- Footer Social Icons End -->
                     </div>
-                        <!-- Footer Header End -->
-                    </div>
+                    <!-- Footer Header End -->
+                </div>
 
-                    <div class="col-xl-4 col-lg-12">
-                        <!-- About Footer Start -->
-                        <div class="about-footer-metal">
-                            <!-- Footer Logo Start -->
-                            <div class="footer-logo-metal">
-                                <img src="images/logo.svg" alt="">
-                            </div>
-                            <!-- Footer Logo End -->
-
-                            <!-- About Footer Content Start -->
-                            <div class="about-footer-content-metal">
-                                <p> H-10 Bharat lokhand Bazaar,<br>
-                                    Ms Ali Road, Mumbai 400 008</p>
-                            </div>
-                            <!-- About Footer Content End -->
+                <div class="col-xl-4 col-lg-12">
+                    <!-- About Footer Start -->
+                    <div class="about-footer-metal">
+                        <!-- Footer Logo Start -->
+                        <div class="footer-logo-metal">
+                            <img src="images/footer_logo.svg" alt="">
                         </div>
-                        <!-- About Footer End -->
+                        <!-- Footer Logo End -->
+
+                        <!-- About Footer Content Start -->
+                        <div class="about-footer-content-metal">
+                            <p> H-10 Bharat lokhand Bazaar,<br>
+                                Ms Ali Road, Mumbai 400 008</p>
+                        </div>
+                        <!-- About Footer Content End -->
                     </div>
+                    <!-- About Footer End -->
+                </div>
 
-                    <div class="col-xl-8">
-                        <!-- Footer Links Box Start -->
-                        <div class="footer-links-box-metal">
-                            <!-- Footer Links Start -->
-                            <div class="footer-links-metal">
-                                <h3>Quick Links</h3>
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
-                                    
-                                    <li><a href="/storage-rack.html">Storage Rack</a></li>
-                                    <li><a href="/workspace-solutions.html">Workspace solutions</a></li>
-                                </ul>
-                            </div>
-                            <!-- Footer Links End -->
+                <div class="col-xl-8">
+                    <!-- Footer Links Box Start -->
+                    <div class="footer-links-box-metal">
+                        <!-- Footer Links Start -->
+                        <div class="footer-links-metal">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
 
-                            <!-- Footer Links Start -->
-                            <div class="footer-links-metal">
-                                <h3>Our Services</h3>
-                                <ul>
-                                    <li><a href="/retail-sector.html">Retail Sector</a></li>
-                                    <li><a href="/store-fixtures.html">Store Fixtures</a></li>
-                                    <li><a href="/display-racks.html">Display Racks</a></li>
-                                    <li><a href="/super-market.html">Super Market</a></li>
-                                    <li><a href="/cable-tray.html">Cable Tray</a></li>
-                                </ul>
-                            </div>
-                            <!-- Footer Links End -->
+                                <li><a href="/storage-rack.html">Storage Rack</a></li>
+                                <li><a href="/workspace-solutions.html">Workspace solutions</a></li>
+                            </ul>
+                        </div>
+                        <!-- Footer Links End -->
 
-                            <!-- Footer Newsletter Form Start -->
-                            <div class="footer-contact-box">
-                                <h3>Get In Touch</h3>
+                        <!-- Footer Links Start -->
+                        <div class="footer-links-metal">
+                            <h3>Our Services</h3>
+                            <ul>
+                                <li><a href="/retail-sector.html">Retail Sector</a></li>
+                                <li><a href="/store-fixtures.html">Store Fixtures</a></li>
+                                <li><a href="/display-racks.html">Display Racks</a></li>
+                                <li><a href="/super-market.html">Super Market</a></li>
+                                <li><a href="/cable-tray.html">Cable Tray</a></li>
+                            </ul>
+                        </div>
+                        <!-- Footer Links End -->
 
-                                <div class="contact-item">
-                                    <div class="contact-icon">
-                                        <i class="fa-regular fa-envelope"></i>
-                                    </div>
-                                    <div class="contact-text">
-                                        <h4>E-mail Us</h4>
-                                        <p><a href="mailto:contact@saifandbrothers.com">contact@saifandbrothers.com</a></p>
-                                        <p><a href="mailto:sales@saifandbrothers.com">sales@saifandbrothers.com</a></p>
-                                    </div>
+                        <!-- Footer Newsletter Form Start -->
+                        <div class="footer-contact-box">
+                            <h3>Get In Touch</h3>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fa-regular fa-envelope"></i>
                                 </div>
-
-                                <div class="contact-item">
-                                    <div class="contact-icon">
-                                        <i class="fa-solid fa-phone"></i>
-                                    </div>
-                                    <div class="contact-text">
-                                        <h4>Inquiries</h4>
-                                        <p><a href="tel:+919920947358">+91 9920947358</a></p>
-                                    </div>
+                                <div class="contact-text">
+                                    <h4>E-mail Us</h4>
+                                    <p><a href="mailto:contact@saifandbrothers.com">contact@saifandbrothers.com</a></p>
+                                    <p><a href="mailto:sales@saifandbrothers.com">sales@saifandbrothers.com</a></p>
                                 </div>
                             </div>
-                            <!-- Footer Newsletter Form End -->
-                        </div>
-                        <!-- Footer Links Box End -->
-                    </div>
 
-                    <div class="col-lg-12">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Inquiries</h4>
+                                    <p><a href="tel:+919920947358">+91 9920947358</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Footer Newsletter Form End -->
+                    </div>
+                    <!-- Footer Links Box End -->
+                </div>
+
+                <div class="col-lg-12">
+                    <!-- Footer Copyright Text Start -->
+                    <div class="footer-copyright">
                         <!-- Footer Copyright Text Start -->
-                        <div class="footer-copyright">
-                            <!-- Footer Copyright Text Start -->
-                            <div class="footer-copyright-text">
-                                <p>Copyright © 2026 All Rights Reserved.</p>
-                            </div>
-                            <!-- Footer Copyright Text Start -->
-
-                            <!-- Footer Privacy Policy Start -->
-                            <div class="footer-copyright-text">
-                                <p>Designed And Developed By <a href="https://www.itdax.in/"
-                                        style="color: white; font-weight: bold;" >Itdax Studio</a></p>
-                            </div>
-                            <!-- Footer Privacy Policy End -->
+                        <div class="footer-copyright-text">
+                            <p>Copyright © 2026 All Rights Reserved.</p>
                         </div>
-                        <!-- Footer Copyright Text End -->
+                        <!-- Footer Copyright Text Start -->
+
+                        <!-- Footer Privacy Policy Start -->
+                        <div class="footer-copyright-text">
+                            <p>Designed And Developed By <a href="https://www.itdax.in/"
+                                    style="color: white; font-weight: bold;">Itdax Studio</a></p>
+                        </div>
+                        <!-- Footer Privacy Policy End -->
                     </div>
+                    <!-- Footer Copyright Text End -->
                 </div>
             </div>
         </div>
+    </div>
         <!-- Main Footer End -->
         <!-- Main Footer End -->
   <script>
