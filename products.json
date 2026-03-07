@@ -1,0 +1,137 @@
+{
+  "products":[
+    
+    {
+      "slug":"office-rack",
+      "name":"Office Rack",
+      "description":"Our Office Rack is a reliable and heavy-duty storage solution designed to keep your workspace organized, efficient, and clutter-free.<br><br>Whether you need to store important office files, documents, cartons, office supplies, tools, or other materials, this rack helps create a clean and well-structured storage system that improves productivity and accessibility in the workplace.",
+
+      "images":[  
+        "../images/slotted-angle-rack/1.webp",
+        "../images/slotted-angle-rack/2.webp",
+        "../images/slotted-angle-rack/3.webp"
+      ],
+
+      "accordion":[
+
+        {
+          "title":"Product Description",
+          "content":"This premium office rack is engineered for modern workplaces where organized storage is essential. Built with strong slotted angle steel, it offers durability, stability, and long-term performance."
+        },
+
+        {
+          "title":"Key Features",
+          "content":"Heavy duty steel construction.<br>Adjustable shelves for flexible storage.<br>Rust resistant powder coated finish.<br>Easy bolt and nut assembly."
+        },
+
+        {
+          "title":"Dimensions",
+          "content":"Height: 200 cm<br>Width: 120 cm<br>Depth: 45 cm"
+        },
+
+        {
+          "title":"Applications",
+          "content":"Ideal for offices, record rooms, libraries, warehouses, and commercial storage environments."
+        }
+
+      ]
+    },
+
+
+    {
+      "slug":"warehouse-rack",
+      "name":"Warehouse Rack",
+      "description":"Our Warehouse Rack is designed for heavy-duty storage applications where strength and durability are essential. It helps organize cartons, materials, and inventory efficiently in warehouse environments.",
+
+      "images":[
+        "../images/slotted-angle-rack/1.webp",
+        "../images/slotted-angle-rack/2.webp",
+        "../images/slotted-angle-rack/3.webp"
+      ],
+
+      "accordion":[
+        {
+          "title":"Product Description",
+          "content":"A strong and reliable storage rack specially designed for warehouses and industrial storage environments."
+        },
+        {
+          "title":"Key Features",
+          "content":"High load capacity.<br>Durable steel structure.<br>Adjustable shelves.<br>Long-lasting powder coating."
+        },
+        {
+          "title":"Dimensions",
+          "content":"Height: 220 cm<br>Width: 150 cm<br>Depth: 60 cm"
+        },
+        {
+          "title":"Applications",
+          "content":"Warehouses, factories, logistics storage, and industrial inventory systems."
+        }
+      ]
+    },
+
+
+    {
+      "slug":"file-storage-rack",
+      "name":"File Storage Rack",
+      "description":"Our File Storage Rack is designed to store office documents, files, and folders in a structured and organized manner.",
+
+      "images":[
+        "../images/slotted-angle-rack/1.webp",
+        "../images/slotted-angle-rack/2.webp",
+        "../images/slotted-angle-rack/3.webp"
+      ],
+
+      "accordion":[
+        {
+          "title":"Product Description",
+          "content":"Perfect storage solution for maintaining office records and documents efficiently."
+        },
+        {
+          "title":"Key Features",
+          "content":"Adjustable shelf levels.<br>Strong steel frame.<br>Compact design.<br>Easy installation."
+        },
+        {
+          "title":"Dimensions",
+          "content":"Height: 180 cm<br>Width: 100 cm<br>Depth: 40 cm"
+        },
+        {
+          "title":"Applications",
+          "content":"Offices, libraries, document rooms, and record management systems."
+        }
+      ]
+    },
+
+
+    {
+      "slug":"file-rack",
+      "name":"File Rack",
+      "description":"File Racks provide a convenient and organized way to store office documents and folders.",
+
+      "images":[
+        "../images/slotted-angle-rack/1.webp",
+        "../images/slotted-angle-rack/2.webp",
+        "../images/slotted-angle-rack/3.webp"
+      ],
+
+      "accordion":[
+        {
+          "title":"Product Description",
+          "content":"A simple yet effective rack solution for organizing office files and paperwork."
+        },
+        {
+          "title":"Key Features",
+          "content":"Compact design.<br>Strong metal frame.<br>Adjustable shelves.<br>Easy maintenance."
+        },
+        {
+          "title":"Dimensions",
+          "content":"Height: 180 cm<br>Width: 90 cm<br>Depth: 40 cm"
+        },
+        {
+          "title":"Applications",
+          "content":"Offices, file rooms, libraries, and record storage areas."
+        }
+      ]
+    }
+
+  ]
+}
