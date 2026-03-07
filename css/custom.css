@@ -357,7 +357,7 @@ a:focus {
 }
 
 .dark-section {
-  background-color: var(--primary-color);
+  background-color: #393838;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -463,7 +463,7 @@ a:focus {
 /************************************/
 
 .topbar {
-  background: #000000;
+  background: #393838;
   padding: 15px 0;
 }
 
@@ -12298,7 +12298,7 @@ a {
 .footer-newsletter-form-elite .form-group {
   display: flex;
   align-items: center;
-  background: #111;
+  background: #393838;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 8px;
   overflow: hidden;
